@@ -1,0 +1,34 @@
+|mbr_circ1
+f1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+p4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+p1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst2.IN1
+b => inst.IN1
+p2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+d => inst3.IN0
+c => inst3.IN1
+c => inst2.IN0
+p5 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+p3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+p6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+f2 <= XNOR3:inst9.OUT
+
+
+|mbr_circ1|maj3:inst7
+s <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|mbr_circ1|XNOR3:inst9
+OUT <= 9.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+

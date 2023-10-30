@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\maxbo\Documentos\estudos\circuitos_digitais\TP2\simulation\qsim
+vmbr_circ1
+Z1 Ifm7=WjFJK84BS`TmbNGHn0
+Z2 VGGVRohGV:kZ@MHAX0nE5X1
+Z3 dC:\Users\maxbo\Documentos\estudos\circuitos_digitais\TP2\simulation\qsim
+Z4 w1698470265
+Z5 8mbr_circ1.vo
+Z6 Fmbr_circ1.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 ?kD2YD>ObQ=D:FDV2VWXk0
+!s85 0
+Z10 !s108 1698470266.651000
+Z11 !s107 mbr_circ1.vo|
+Z12 !s90 -work|work|mbr_circ1.vo|
+!s101 -O0
+vmbr_circ1_vlg_check_tst
+!i10b 1
+!s100 XGnNQ5Wk:7L0N<Q5Qd;i>1
+ITQhcZ3Zh1Pl=jB4VllSmj2
+V@<Wa:5afSaLMN]meFldHE3
+R3
+Z13 w1698470263
+Z14 8Waveform.vwf.vt
+Z15 FWaveform.vwf.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z16 !s108 1698470266.908000
+Z17 !s107 Waveform.vwf.vt|
+Z18 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R8
+vmbr_circ1_vlg_sample_tst
+!i10b 1
+!s100 ;XQ8cQ4f7TE6cdTRz:A0m2
+I>X[ETX90[fj:S1Y3c[fVo0
+Vn2X]gOmK<<9[g>leL>P`B2
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vmbr_circ1_vlg_vec_tst
+!i10b 1
+!s100 aFa@^UU6lWIazV?8n3L5a2
+IFRU8eUB?O<Jj5o8K9@XFa0
+V4GJ`=FDR8O:a^0n0EdR6a0
+R3
+R13
+R14
+R15
+L0 347
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

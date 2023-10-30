@@ -1,0 +1,264 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/25/2023 11:46:18"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    mbr_mux4x1_1b
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module mbr_mux4x1_1b_vlg_sample_tst(
+	a,
+	b,
+	c,
+	c0,
+	c1,
+	d,
+	sampler_tx
+);
+input  a;
+input  b;
+input  c;
+input  c0;
+input  c1;
+input  d;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(a or b or c or c0 or c1 or d)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module mbr_mux4x1_1b_vlg_check_tst (
+	s,
+	sampler_rx
+);
+input  s;
+input sampler_rx;
+
+reg  s_expected;
+
+reg  s_prev;
+
+reg  s_expected_prev;
+
+reg  last_s_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:1] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 1'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	s_prev = s;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	s_expected_prev = s_expected;
+end
+
+
+
+// expected s
+initial
+begin
+	s_expected = 1'bX;
+end 
+// generate trigger
+always @(s_expected or s)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected s = %b | ",s_expected_prev);
+	$display("| real s = %b | ",s_prev);
+`endif
+	if (
+		( s_expected_prev !== 1'bx ) && ( s_prev !== s_expected_prev )
+		&& ((s_expected_prev !== last_s_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port s :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", s_expected_prev);
+		$display ("     Real value = %b", s_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_s_exp = s_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module mbr_mux4x1_1b_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg a;
+reg b;
+reg c;
+reg c0;
+reg c1;
+reg d;
+// wires                                               
+wire s;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+mbr_mux4x1_1b i1 (
+// port map - connection between master ports and signals/registers   
+	.a(a),
+	.b(b),
+	.c(c),
+	.c0(c0),
+	.c1(c1),
+	.d(d),
+	.s(s)
+);
+
+// a
+always
+begin
+	a = 1'b0;
+	a = #10000 1'b1;
+	#10000;
+end 
+
+// b
+initial
+begin
+	repeat(16)
+	begin
+		b = 1'b0;
+		b = #30000 1'b1;
+		# 30000;
+	end
+	b = 1'b0;
+	b = #30000 1'b1;
+end 
+
+// c
+initial
+begin
+	repeat(2)
+	begin
+		c = 1'b0;
+		c = #200000 1'b1;
+		# 200000;
+	end
+	c = 1'b0;
+end 
+
+// d
+always
+begin
+	d = 1'b0;
+	d = #100000 1'b1;
+	#100000;
+end 
+
+// c0
+initial
+begin
+	repeat(2)
+	begin
+		c0 = 1'b0;
+		c0 = #200000 1'b1;
+		# 200000;
+	end
+	c0 = 1'b0;
+end 
+
+// c1
+initial
+begin
+	c1 = 1'b0;
+	c1 = #400000 1'b1;
+	c1 = #400000 1'b0;
+end 
+
+mbr_mux4x1_1b_vlg_sample_tst tb_sample (
+	.a(a),
+	.b(b),
+	.c(c),
+	.c0(c0),
+	.c1(c1),
+	.d(d),
+	.sampler_tx(sampler)
+);
+
+mbr_mux4x1_1b_vlg_check_tst tb_out(
+	.s(s),
+	.sampler_rx(sampler)
+);
+endmodule
+
