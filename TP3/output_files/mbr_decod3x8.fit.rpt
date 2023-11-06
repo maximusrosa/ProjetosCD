@@ -1,5 +1,5 @@
 Fitter report for mbr_decod3x8
-Mon Oct 30 22:25:39 2023
+Thu Nov 02 16:06:58 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Mon Oct 30 22:25:39 2023      ;
+; Fitter Status                      ; Successful - Thu Nov 02 16:06:58 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; mbr_decod3x8                               ;
 ; Top-level Entity Name              ; mbr_decod3x8                               ;
@@ -152,12 +152,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.60        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ; < 0.1%      ;
+;     Processors 2-4         ;  20.0%      ;
 ;     Processors 5-8         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -175,9 +175,9 @@ applicable agreement for further details.
 ; s5       ; Incomplete set of assignments ;
 ; s6       ; Incomplete set of assignments ;
 ; s7       ; Incomplete set of assignments ;
-; e0       ; Incomplete set of assignments ;
-; e2       ; Incomplete set of assignments ;
-; e1       ; Incomplete set of assignments ;
+; e[0]     ; Incomplete set of assignments ;
+; e[2]     ; Incomplete set of assignments ;
+; e[1]     ; Incomplete set of assignments ;
 +----------+-------------------------------+
 
 
@@ -351,9 +351,9 @@ The pin-out file can be found in C:/Users/maxbo/Documentos/estudos/circuitos_dig
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
-; e0   ; H10   ; 5        ; 33           ; 14           ; 0            ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; e1   ; H13   ; 5        ; 33           ; 16           ; 14           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; e2   ; G13   ; 5        ; 33           ; 16           ; 21           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; e[0] ; H10   ; 5        ; 33           ; 14           ; 0            ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; e[1] ; H13   ; 5        ; 33           ; 16           ; 14           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; e[2] ; G13   ; 5        ; 33           ; 16           ; 21           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
 
 
@@ -508,7 +508,7 @@ The pin-out file can be found in C:/Users/maxbo/Documentos/estudos/circuitos_dig
 ; G10      ; 59         ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G11      ;            ; 6        ; VCCIO6                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; G12      ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; G13      ; 55         ; 5        ; e2                                               ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; G13      ; 55         ; 5        ; e[2]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; H1       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H2       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H3       ;            ; --       ; VCCL_GXB                                         ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -518,10 +518,10 @@ The pin-out file can be found in C:/Users/maxbo/Documentos/estudos/circuitos_dig
 ; H7       ;            ;          ; VCCINT                                           ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; H8       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H9       ;            ; --       ; VCCA                                             ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; H10      ; 52         ; 5        ; e0                                               ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H10      ; 52         ; 5        ; e[0]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; H11      ;            ; 5        ; VCCIO5                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; H12      ; 51         ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; H13      ; 56         ; 5        ; e1                                               ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H13      ; 56         ; 5        ; e[1]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; J1       ; 15         ; QL0      ; GXB_GND*                                         ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; J2       ; 14         ; QL0      ; GXB_GND*                                         ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; J3       ;            ; --       ; VCCA_GXB                                         ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -614,9 +614,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; s5   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; s6   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; s7   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; e0   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; e2   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; e1   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; e[0] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; e[2] ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; e[1] ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 +------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -625,7 +625,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
-; e0                  ;                   ;         ;
+; e[0]                ;                   ;         ;
 ;      - inst~0       ; 0                 ; 6       ;
 ;      - inst~1       ; 0                 ; 6       ;
 ;      - inst~2       ; 0                 ; 6       ;
@@ -634,28 +634,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - inst~5       ; 0                 ; 6       ;
 ;      - inst~6       ; 0                 ; 6       ;
 ;      - inst~7       ; 0                 ; 6       ;
-; e2                  ;                   ;         ;
-; e1                  ;                   ;         ;
+; e[2]                ;                   ;         ;
+; e[1]                ;                   ;         ;
 +---------------------+-------------------+---------+
 
 
 +---------------------------------+
 ; Non-Global High Fan-Out Signals ;
-+----------+----------------------+
-; Name     ; Fan-Out              ;
-+----------+----------------------+
-; e1~input ; 8                    ;
-; e2~input ; 8                    ;
-; e0~input ; 8                    ;
-; inst~7   ; 1                    ;
-; inst~6   ; 1                    ;
-; inst~5   ; 1                    ;
-; inst~4   ; 1                    ;
-; inst~3   ; 1                    ;
-; inst~2   ; 1                    ;
-; inst~1   ; 1                    ;
-; inst~0   ; 1                    ;
-+----------+----------------------+
++------------+--------------------+
+; Name       ; Fan-Out            ;
++------------+--------------------+
+; e[1]~input ; 8                  ;
+; e[2]~input ; 8                  ;
+; e[0]~input ; 8                  ;
+; inst~7     ; 1                  ;
+; inst~6     ; 1                  ;
+; inst~5     ; 1                  ;
+; inst~4     ; 1                  ;
+; inst~3     ; 1                  ;
+; inst~2     ; 1                  ;
+; inst~1     ; 1                  ;
+; inst~0     ; 1                  ;
++------------+--------------------+
 
 
 +-----------------------------------------------------------+
@@ -674,8 +674,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Interquad TXRX PCSRX outputs      ; 0 / 4 ( 0 % )         ;
 ; Interquad TXRX PCSTX outputs      ; 0 / 4 ( 0 % )         ;
 ; Local interconnects               ; 0 / 14,400 ( 0 % )    ;
-; R24 interconnects                 ; 4 / 1,710 ( < 1 % )   ;
-; R4 interconnects                  ; 14 / 37,740 ( < 1 % ) ;
+; R24 interconnects                 ; 3 / 1,710 ( < 1 % )   ;
+; R4 interconnects                  ; 16 / 37,740 ( < 1 % ) ;
 +-----------------------------------+-----------------------+
 
 
@@ -818,9 +818,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; s5                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; s6                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; s7                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; e0                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; e2                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; e1                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; e[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; e[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; e[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -888,9 +888,9 @@ Critical Warning (169085): No exact pin location assignment(s) for 11 pins of 11
     Info (169086): Pin s5 not assigned to an exact location on the device
     Info (169086): Pin s6 not assigned to an exact location on the device
     Info (169086): Pin s7 not assigned to an exact location on the device
-    Info (169086): Pin e0 not assigned to an exact location on the device
-    Info (169086): Pin e2 not assigned to an exact location on the device
-    Info (169086): Pin e1 not assigned to an exact location on the device
+    Info (169086): Pin e[0] not assigned to an exact location on the device
+    Info (169086): Pin e[2] not assigned to an exact location on the device
+    Info (169086): Pin e[1] not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'mbr_decod3x8.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -929,7 +929,7 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.03 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -937,10 +937,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP3/output_files/mbr_decod3x8.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5423 megabytes
-    Info: Processing ended: Mon Oct 30 22:25:40 2023
+    Info: Peak virtual memory: 5435 megabytes
+    Info: Processing ended: Thu Nov 02 16:06:59 2023
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +----------------------------+

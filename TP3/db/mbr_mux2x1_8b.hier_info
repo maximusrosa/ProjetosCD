@@ -1,0 +1,99 @@
+|mbr_mux2x1_8b
+S[0] <= mbr_mux2x1_1b:inst.X
+S[1] <= mbr_mux2x1_1b:inst6.X
+S[2] <= mbr_mux2x1_1b:inst7.X
+S[3] <= mbr_mux2x1_1b:inst8.X
+S[4] <= mbr_mux2x1_1b:inst9.X
+S[5] <= mbr_mux2x1_1b:inst10.X
+S[6] <= mbr_mux2x1_1b:inst11.X
+S[7] <= mbr_mux2x1_1b:inst12.X
+A[0] => mbr_mux2x1_1b:inst.e0
+A[1] => mbr_mux2x1_1b:inst6.e0
+A[2] => mbr_mux2x1_1b:inst7.e0
+A[3] => mbr_mux2x1_1b:inst8.e0
+A[4] => mbr_mux2x1_1b:inst9.e0
+A[5] => mbr_mux2x1_1b:inst10.e0
+A[6] => mbr_mux2x1_1b:inst11.e0
+A[7] => mbr_mux2x1_1b:inst12.e0
+c => mbr_mux2x1_1b:inst.c
+c => mbr_mux2x1_1b:inst6.c
+c => mbr_mux2x1_1b:inst7.c
+c => mbr_mux2x1_1b:inst8.c
+c => mbr_mux2x1_1b:inst9.c
+c => mbr_mux2x1_1b:inst10.c
+c => mbr_mux2x1_1b:inst11.c
+c => mbr_mux2x1_1b:inst12.c
+B[0] => mbr_mux2x1_1b:inst.e1
+B[1] => mbr_mux2x1_1b:inst6.e1
+B[2] => mbr_mux2x1_1b:inst7.e1
+B[3] => mbr_mux2x1_1b:inst8.e1
+B[4] => mbr_mux2x1_1b:inst9.e1
+B[5] => mbr_mux2x1_1b:inst10.e1
+B[6] => mbr_mux2x1_1b:inst11.e1
+B[7] => mbr_mux2x1_1b:inst12.e1
+
+
+|mbr_mux2x1_8b|mbr_mux2x1_1b:inst
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_mux2x1_8b|mbr_mux2x1_1b:inst6
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_mux2x1_8b|mbr_mux2x1_1b:inst7
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_mux2x1_8b|mbr_mux2x1_1b:inst8
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_mux2x1_8b|mbr_mux2x1_1b:inst9
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_mux2x1_8b|mbr_mux2x1_1b:inst10
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_mux2x1_8b|mbr_mux2x1_1b:inst11
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_mux2x1_8b|mbr_mux2x1_1b:inst12
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+

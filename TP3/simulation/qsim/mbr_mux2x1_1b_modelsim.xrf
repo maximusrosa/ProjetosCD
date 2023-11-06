@@ -1,9 +1,9 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/aluno/maximus/mbr_mux2x1_1b.bdf
-source_file = 1, C:/Users/aluno/maximus/Waveform.vwf
-source_file = 1, C:/Users/aluno/maximus/db/mbr_mux2x1_1b.cbx.xml
+source_file = 1, C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP3/mbr_mux2x1_1b.bdf
+source_file = 1, C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP3/Waveform.vwf
+source_file = 1, C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP3/db/mbr_mux2x1_1b.cbx.xml
 design_name = mbr_mux2x1_1b
-instance = comp, \s~output , s~output, mbr_mux2x1_1b, 1
+instance = comp, \X~output , X~output, mbr_mux2x1_1b, 1
 instance = comp, \e1~input , e1~input, mbr_mux2x1_1b, 1
 instance = comp, \c~input , c~input, mbr_mux2x1_1b, 1
 instance = comp, \e0~input , e0~input, mbr_mux2x1_1b, 1

@@ -1,5 +1,5 @@
 |mbr_mux2x1_1b
-s <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 c => inst1.IN0
 c => inst2.IN0
 e1 => inst1.IN1

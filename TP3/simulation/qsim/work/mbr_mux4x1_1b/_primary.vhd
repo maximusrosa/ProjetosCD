@@ -2,12 +2,11 @@ library verilog;
 use verilog.vl_types.all;
 entity mbr_mux4x1_1b is
     port(
-        s               : out    vl_logic;
-        a               : in     vl_logic;
-        c0              : in     vl_logic;
-        b               : in     vl_logic;
-        c1              : in     vl_logic;
-        c               : in     vl_logic;
-        d               : in     vl_logic
+        X               : out    vl_logic;
+        e0              : in     vl_logic;
+        c               : in     vl_logic_vector(1 downto 0);
+        e1              : in     vl_logic;
+        e2              : in     vl_logic;
+        e3              : in     vl_logic
     );
 end mbr_mux4x1_1b;

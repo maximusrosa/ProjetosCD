@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 112 176)
+	(rect 16 16 112 144)
 	(text "mbr_mux4x1_1b" (rect 5 0 99 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 144 25 156)(font "Arial" ))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -54,16 +54,9 @@ applicable agreement for further details.
 	(port
 		(pt 0 96)
 		(input)
-		(text "c0" (rect 0 0 14 14)(font "Arial" (font_size 8)))
-		(text "c0" (rect 21 91 35 105)(font "Arial" (font_size 8)))
-		(line (pt 0 96)(pt 16 96))
-	)
-	(port
-		(pt 0 112)
-		(input)
-		(text "c1" (rect 0 0 14 14)(font "Arial" (font_size 8)))
-		(text "c1" (rect 21 107 35 121)(font "Arial" (font_size 8)))
-		(line (pt 0 112)(pt 16 112))
+		(text "c[1..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "c[1..0]" (rect 21 91 56 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
 	)
 	(port
 		(pt 96 32)
@@ -73,6 +66,6 @@ applicable agreement for further details.
 		(line (pt 96 32)(pt 80 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 80 144))
+		(rectangle (rect 16 16 80 112))
 	)
 )

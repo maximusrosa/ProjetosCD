@@ -165,7 +165,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : G9        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : G10       :        :                   :         : 6         :                
 VCCIO6                       : G11       : power  :                   : 2.5V    : 6         :                
 GND                          : G12       : gnd    :                   :         :           :                
-e2                           : G13       : input  : 2.5 V             :         : 5         : N              
+e[2]                         : G13       : input  : 2.5 V             :         : 5         : N              
 GND                          : H1        : gnd    :                   :         :           :                
 GND                          : H2        : gnd    :                   :         :           :                
 VCCL_GXB                     : H3        : power  :                   : 1.2V    :           :                
@@ -175,10 +175,10 @@ GND                          : H6        : gnd    :                   :         
 VCCINT                       : H7        : power  :                   : 1.2V    :           :                
 GND                          : H8        : gnd    :                   :         :           :                
 VCCA                         : H9        : power  :                   : 2.5V    :           :                
-e0                           : H10       : input  : 2.5 V             :         : 5         : N              
+e[0]                         : H10       : input  : 2.5 V             :         : 5         : N              
 VCCIO5                       : H11       : power  :                   : 2.5V    : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H12       :        :                   :         : 5         :                
-e1                           : H13       : input  : 2.5 V             :         : 5         : N              
+e[1]                         : H13       : input  : 2.5 V             :         : 5         : N              
 GXB_GND*                     : J1        :        :                   :         : QL0       :                
 GXB_GND*                     : J2        :        :                   :         : QL0       :                
 VCCA_GXB                     : J3        : power  :                   : 2.5V    :           :                

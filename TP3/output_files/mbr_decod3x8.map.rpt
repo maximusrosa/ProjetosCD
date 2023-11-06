@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mbr_decod3x8
-Mon Oct 30 22:25:31 2023
+Thu Nov 02 16:06:51 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 30 22:25:31 2023      ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 02 16:06:51 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; mbr_decod3x8                               ;
 ; Top-level Entity Name              ; mbr_decod3x8                               ;
@@ -181,7 +181,7 @@ applicable agreement for further details.
 +--------------------------+------------------+
 ; I/O pins                 ; 11               ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; e0~input         ;
+; Maximum fan-out node     ; e[0]~input       ;
 ; Maximum fan-out          ; 8                ;
 ; Total fan-out            ; 43               ;
 ; Average fan-out          ; 1.43             ;
@@ -228,7 +228,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Oct 30 22:25:29 2023
+    Info: Processing started: Thu Nov 02 16:06:49 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mbr_decod3x8 -c mbr_decod3x8
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file mbr_decod3x8.bdf
@@ -243,8 +243,8 @@ Info (21057): Implemented 19 device resources after synthesis - the final resour
     Info (21061): Implemented 8 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4698 megabytes
-    Info: Processing ended: Mon Oct 30 22:25:31 2023
+    Info: Processing ended: Thu Nov 02 16:06:51 2023
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 
