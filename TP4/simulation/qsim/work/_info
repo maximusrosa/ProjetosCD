@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\aluno\maximus\ProjetosCD\TP4\simulation\qsim
+vmbr_bloco_arit_4b
+Z1 !s100 f<N<nanD[SKJWEeZm26Dn3
+Z2 INAV3Ui9LIAPQCPV;Q1Jzn2
+Z3 V[`Z>UU7;o_R6Xmf<_V[JY2
+Z4 dC:\Users\maxbo\Documentos\estudos\circuitos_digitais\TP4\simulation\qsim
+Z5 w1699394173
+Z6 8mbr_bloco_arit_4b.vo
+Z7 Fmbr_bloco_arit_4b.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|mbr_bloco_arit_4b.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1699394175.638000
+Z12 !s107 mbr_bloco_arit_4b.vo|
+!s101 -O0
+vmbr_bloco_arit_4b_vlg_check_tst
+!i10b 1
+Z13 !s100 @SLOEaYkTV]hFE0oAPQZG3
+Z14 IG;_dfgb^eT<V0:_HgzWhi0
+Z15 VWh>R7nAKNT77GYo=iaHBG1
+R4
+Z16 w1699394172
+Z17 8Waveform.vwf.vt
+Z18 FWaveform.vwf.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z19 !s108 1699394176.105000
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R10
+vmbr_bloco_arit_4b_vlg_sample_tst
+!i10b 1
+Z22 !s100 `zcbOL0V1G6i>hgonO6_P2
+Z23 Ie81JUbZP;_2=Gno[8VP=z1
+Z24 VId?KFS<<J:0g>[iU:15b_1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vmbr_bloco_arit_4b_vlg_vec_tst
+!i10b 1
+Z25 !s100 Y2Y0OWY@ObW_9OmN4D^471
+Z26 IIWZH3BQ:D@mPBkk=MSzH@2
+Z27 VD7TTlJEUFc2VUdYh21hQ[2
+R4
+R16
+R17
+R18
+Z28 L0 207
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

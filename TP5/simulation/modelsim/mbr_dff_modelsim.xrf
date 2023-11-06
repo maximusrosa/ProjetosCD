@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/aluno/maximus/TP5/mbr_dff.bdf
+source_file = 1, C:/Users/aluno/maximus/TP5/db/mbr_dff.cbx.xml
+design_name = mbr_dff
+instance = comp, \saida~output\, saida~output, mbr_dff, 1
+instance = comp, \clock~input\, clock~input, mbr_dff, 1
+instance = comp, \data~input\, data~input, mbr_dff, 1
+instance = comp, \inst~feeder\, inst~feeder, mbr_dff, 1
+instance = comp, \reset~input\, reset~input, mbr_dff, 1

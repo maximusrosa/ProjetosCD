@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/aluno/maximus/TP5/mbr_div_freq_1b.bdf
+source_file = 1, C:/Users/aluno/maximus/TP5/db/mbr_div_freq_1b.cbx.xml
+design_name = mbr_div_freq_1b
+instance = comp, \Q~output\, Q~output, mbr_div_freq_1b, 1
+instance = comp, \D~output\, D~output, mbr_div_freq_1b, 1
+instance = comp, \CK~input\, CK~input, mbr_div_freq_1b, 1
+instance = comp, \inst~0\, inst~0, mbr_div_freq_1b, 1
+instance = comp, \RST~input\, RST~input, mbr_div_freq_1b, 1

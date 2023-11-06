@@ -1,0 +1,44 @@
+|mbr_div_freq_5b
+Q[4] <= mbr_div_freq_1b:inst5.Q
+Q[3] <= mbr_div_freq_1b:inst4.Q
+Q[2] <= mbr_div_freq_1b:inst3.Q
+Q[1] <= mbr_div_freq_1b:inst2.Q
+Q[0] <= mbr_div_freq_1b:inst.Q
+CK => mbr_div_freq_1b:inst.CK
+RST => mbr_div_freq_1b:inst.RST
+RST => mbr_div_freq_1b:inst3.RST
+RST => mbr_div_freq_1b:inst2.RST
+RST => mbr_div_freq_1b:inst4.RST
+RST => mbr_div_freq_1b:inst5.RST
+
+
+|mbr_div_freq_5b|mbr_div_freq_1b:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CK => inst.CLK
+
+
+|mbr_div_freq_5b|mbr_div_freq_1b:inst3
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CK => inst.CLK
+
+
+|mbr_div_freq_5b|mbr_div_freq_1b:inst2
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CK => inst.CLK
+
+
+|mbr_div_freq_5b|mbr_div_freq_1b:inst4
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CK => inst.CLK
+
+
+|mbr_div_freq_5b|mbr_div_freq_1b:inst5
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CK => inst.CLK
+
+
