@@ -1,5 +1,5 @@
 EDA Netlist Writer report for mbr_bloco_arit_4b
-Tue Nov 07 18:56:13 2023
+Sun Nov 12 21:23:41 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Nov 07 18:56:13 2023 ;
+; EDA Netlist Writer Status ; Successful - Sun Nov 12 21:23:40 2023 ;
 ; Revision Name             ; mbr_bloco_arit_4b                     ;
 ; Top-level Entity Name     ; mbr_bloco_arit_4b                     ;
 ; Family                    ; Cyclone IV GX                         ;
@@ -93,13 +93,13 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Tue Nov 07 18:56:13 2023
+    Info: Processing started: Sun Nov 12 21:23:39 2023
 Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP4/simulation/qsim/ mbr_bloco_arit_4b -c mbr_bloco_arit_4b
 Info (204019): Generated file mbr_bloco_arit_4b.vo in folder "C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP4/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4607 megabytes
-    Info: Processing ended: Tue Nov 07 18:56:13 2023
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Sun Nov 12 21:23:41 2023
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -1,0 +1,16 @@
+Anotações sobre a simulação do Bloco Aritmético
+
+- C0 = 0, C1 = 0 : passa vetor B 
+funciona em [0, 50]
+
+- C0 = 0, C1 = 1: passa A + B
+funciona em [50, 100]
+1100 (14dec) + 1100 (14dec) = 1100 (14dec) com carry out = 1 porque o resultado 0001 1100 (28dec) não cabe em 4 bits
+
+- C0 = 1, C1 = 0: passa -B (comp2) <=> neg(B) + 1 
+funciona em [100, 150]
+B = 0011 -> 1101
+
+- C0 = 1, C1 = 1: passa A - B
+funciona em [150, 200]
+A = 0101 (5dec) + 1101(-3dec) = 0010 (2dec)

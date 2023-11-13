@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mbr_bloco_arit_4b
-Tue Nov 07 18:54:09 2023
+Sun Nov 12 20:50:27 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 07 18:54:09 2023      ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 12 20:50:27 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; mbr_bloco_arit_4b                          ;
 ; Top-level Entity Name              ; mbr_bloco_arit_4b                          ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 4                                          ;
-;     Total combinational functions  ; 4                                          ;
+; Total logic elements               ; 11                                         ;
+;     Total combinational functions  ; 11                                         ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 9                                          ;
+; Total pins                         ; 15                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -165,14 +165,19 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                   ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
-; mbr_bloco_arit_4b.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP4/mbr_bloco_arit_4b.bdf ;         ;
-; mbr_xor2_4b.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP4/mbr_xor2_4b.bdf       ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------+---------+
+; mbr_fa.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP4/mbr_fa.bdf            ;         ;
+; mbr_bloco_arit_4b.bdf            ; yes             ; User Block Diagram/Schematic File        ; C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP4/mbr_bloco_arit_4b.bdf ;         ;
+; mbr_and2_4b.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP4/mbr_and2_4b.bdf       ;         ;
+; mbr_xor2_4b.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP4/mbr_xor2_4b.bdf       ;         ;
+; mbr_somador_4b.bdf               ; yes             ; User Block Diagram/Schematic File        ; C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP4/mbr_somador_4b.bdf    ;         ;
+; maj3.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP4/maj3.bdf              ;         ;
+; xor3.bdf                         ; yes             ; Megafunction                             ; c:/altera/13.1/quartus/libraries/others/maxplus2/xor3.bdf                      ;         ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -180,23 +185,36 @@ applicable agreement for further details.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 9                ;
+; I/O pins                 ; 15               ;
 ; DSP block 9-bit elements ; 0                ;
 ; Maximum fan-out node     ; c0~input         ;
-; Maximum fan-out          ; 4                ;
-; Total fan-out            ; 21               ;
-; Average fan-out          ; 0.95             ;
+; Maximum fan-out          ; 7                ;
+; Total fan-out            ; 57               ;
+; Average fan-out          ; 1.39             ;
 +--------------------------+------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                     ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------+--------------+
-; |mbr_bloco_arit_4b         ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 9    ; 0            ; |mbr_bloco_arit_4b                  ; work         ;
-;    |mbr_xor2_4b:inst|      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_bloco_arit_4b|mbr_xor2_4b:inst ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                 ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
+; |mbr_bloco_arit_4b         ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 15   ; 0            ; |mbr_bloco_arit_4b                                              ; work         ;
+;    |mbr_and2_4b:inst|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_bloco_arit_4b|mbr_and2_4b:inst                             ; work         ;
+;    |mbr_somador_4b:inst0|  ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_bloco_arit_4b|mbr_somador_4b:inst0                         ; work         ;
+;       |mbr_fa:inst1|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst1            ; work         ;
+;          |maj3:inst1|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst1|maj3:inst1 ; work         ;
+;          |xor3:inst|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst1|xor3:inst  ; work         ;
+;       |mbr_fa:inst2|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst2            ; work         ;
+;          |maj3:inst1|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst2|maj3:inst1 ; work         ;
+;          |xor3:inst|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst2|xor3:inst  ; work         ;
+;       |mbr_fa:inst3|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst3            ; work         ;
+;          |maj3:inst1|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst3|maj3:inst1 ; work         ;
+;          |xor3:inst|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst3|xor3:inst  ; work         ;
+;       |mbr_fa:inst|        ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst             ; work         ;
+;          |maj3:inst1|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst|maj3:inst1  ; work         ;
+;          |xor3:inst|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst|xor3:inst   ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -220,7 +238,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -230,7 +248,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Nov 07 18:54:07 2023
+    Info: Processing started: Sun Nov 12 20:50:24 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mbr_bloco_arit_4b -c mbr_bloco_arit_4b
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file mbr_ha.bdf
@@ -249,18 +267,26 @@ Warning (12019): Can't analyze file -- file teste_xor2_4b.bdf is missing
 Info (12021): Found 1 design units, including 1 entities, in source file mbr_somador_4b.bdf
     Info (12023): Found entity 1: mbr_somador_4b
 Info (12127): Elaborating entity "mbr_bloco_arit_4b" for the top level hierarchy
-Info (12128): Elaborating entity "mbr_xor2_4b" for hierarchy "mbr_xor2_4b:inst"
+Info (12128): Elaborating entity "mbr_somador_4b" for hierarchy "mbr_somador_4b:inst0"
+Info (12128): Elaborating entity "mbr_fa" for hierarchy "mbr_somador_4b:inst0|mbr_fa:inst3"
+Warning (12125): Using design file maj3.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: maj3
+Info (12128): Elaborating entity "maj3" for hierarchy "mbr_somador_4b:inst0|mbr_fa:inst3|maj3:inst1"
+Info (12128): Elaborating entity "XOR3" for hierarchy "mbr_somador_4b:inst0|mbr_fa:inst3|XOR3:inst"
+Info (12130): Elaborated megafunction instantiation "mbr_somador_4b:inst0|mbr_fa:inst3|XOR3:inst"
+Info (12128): Elaborating entity "mbr_and2_4b" for hierarchy "mbr_and2_4b:inst"
+Info (12128): Elaborating entity "mbr_xor2_4b" for hierarchy "mbr_xor2_4b:inst1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 13 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 4 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
+Info (21057): Implemented 26 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 11 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4698 megabytes
-    Info: Processing ended: Tue Nov 07 18:54:09 2023
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Sun Nov 12 20:50:27 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
 
 

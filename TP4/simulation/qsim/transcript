@@ -22,5 +22,5 @@
 # Loading work.mbr_bloco_arit_4b_vlg_sample_tst
 # Loading work.mbr_bloco_arit_4b_vlg_check_tst
 # Simulation passed !
-# ** Note: $finish    : Waveform.vwf.vt(203)
+# ** Note: $finish    : Waveform.vwf.vt(234)
 #    Time: 1 us  Iteration: 0  Instance: /mbr_bloco_arit_4b_vlg_vec_tst/tb_out

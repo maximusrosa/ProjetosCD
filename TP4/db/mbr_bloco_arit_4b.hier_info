@@ -1,16 +1,167 @@
 |mbr_bloco_arit_4b
-S[0] <= mbr_xor2_4b:inst.s[0]
-S[1] <= mbr_xor2_4b:inst.s[1]
-S[2] <= mbr_xor2_4b:inst.s[2]
-S[3] <= mbr_xor2_4b:inst.s[3]
-c0 => mbr_xor2_4b:inst.c0
-B[0] => mbr_xor2_4b:inst.a[0]
-B[1] => mbr_xor2_4b:inst.a[1]
-B[2] => mbr_xor2_4b:inst.a[2]
-B[3] => mbr_xor2_4b:inst.a[3]
+c_out <= mbr_somador_4b:inst0.c_out
+c0 => mbr_somador_4b:inst0.c_in
+c0 => mbr_xor2_4b:inst1.c0
+c1 => mbr_and2_4b:inst.c1
+A[0] => mbr_and2_4b:inst.a[0]
+A[1] => mbr_and2_4b:inst.a[1]
+A[2] => mbr_and2_4b:inst.a[2]
+A[3] => mbr_and2_4b:inst.a[3]
+B[0] => mbr_xor2_4b:inst1.a[0]
+B[1] => mbr_xor2_4b:inst1.a[1]
+B[2] => mbr_xor2_4b:inst1.a[2]
+B[3] => mbr_xor2_4b:inst1.a[3]
+S[0] <= mbr_somador_4b:inst0.S[0]
+S[1] <= mbr_somador_4b:inst0.S[1]
+S[2] <= mbr_somador_4b:inst0.S[2]
+S[3] <= mbr_somador_4b:inst0.S[3]
 
 
-|mbr_bloco_arit_4b|mbr_xor2_4b:inst
+|mbr_bloco_arit_4b|mbr_somador_4b:inst0
+c_out <= mbr_fa:inst3.c_out
+A[0] => mbr_fa:inst.x
+A[1] => mbr_fa:inst2.x
+A[2] => mbr_fa:inst1.x
+A[3] => mbr_fa:inst3.x
+B[0] => mbr_fa:inst.y
+B[1] => mbr_fa:inst2.y
+B[2] => mbr_fa:inst1.y
+B[3] => mbr_fa:inst3.y
+c_in => mbr_fa:inst.z
+S[0] <= mbr_fa:inst.sum
+S[1] <= mbr_fa:inst2.sum
+S[2] <= mbr_fa:inst1.sum
+S[3] <= mbr_fa:inst3.sum
+
+
+|mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst3
+c_out <= maj3:inst1.s
+x => maj3:inst1.a
+x => XOR3:inst.IN1
+y => maj3:inst1.b
+y => XOR3:inst.IN2
+z => maj3:inst1.c
+z => XOR3:inst.IN3
+sum <= XOR3:inst.OUT
+
+
+|mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst3|maj3:inst1
+s <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst3|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst1
+c_out <= maj3:inst1.s
+x => maj3:inst1.a
+x => XOR3:inst.IN1
+y => maj3:inst1.b
+y => XOR3:inst.IN2
+z => maj3:inst1.c
+z => XOR3:inst.IN3
+sum <= XOR3:inst.OUT
+
+
+|mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst1|maj3:inst1
+s <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst1|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst2
+c_out <= maj3:inst1.s
+x => maj3:inst1.a
+x => XOR3:inst.IN1
+y => maj3:inst1.b
+y => XOR3:inst.IN2
+z => maj3:inst1.c
+z => XOR3:inst.IN3
+sum <= XOR3:inst.OUT
+
+
+|mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst2|maj3:inst1
+s <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst2|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst
+c_out <= maj3:inst1.s
+x => maj3:inst1.a
+x => XOR3:inst.IN1
+y => maj3:inst1.b
+y => XOR3:inst.IN2
+z => maj3:inst1.c
+z => XOR3:inst.IN3
+sum <= XOR3:inst.OUT
+
+
+|mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst|maj3:inst1
+s <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|mbr_bloco_arit_4b|mbr_somador_4b:inst0|mbr_fa:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|mbr_bloco_arit_4b|mbr_and2_4b:inst
+s[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => inst2.IN0
+a[1] => inst3.IN0
+a[2] => inst4.IN0
+a[3] => inst5.IN0
+c1 => inst2.IN1
+c1 => inst3.IN1
+c1 => inst4.IN1
+c1 => inst5.IN1
+
+
+|mbr_bloco_arit_4b|mbr_xor2_4b:inst1
 s[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 s[1] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 s[2] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
