@@ -1,5 +1,5 @@
 Flow report for mbr_div_freq_1b
-Wed Nov 08 12:13:30 2023
+Fri Nov 17 13:39:34 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 08 12:13:30 2023      ;
+; Flow Status                        ; Successful - Fri Nov 17 13:39:34 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; mbr_div_freq_1b                            ;
 ; Top-level Entity Name              ; mbr_div_freq_1b                            ;
@@ -49,7 +49,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 1 / 14,400 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 1 / 14,400 ( < 1 % )                       ;
 ; Total registers                    ; 1                                          ;
-; Total pins                         ; 4 / 81 ( 5 % )                             ;
+; Total pins                         ; 3 / 81 ( 4 % )                             ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 552,960 ( 0 % )                        ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -68,27 +68,27 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/08/2023 12:06:23 ;
+; Start date & time ; 11/17/2023 13:39:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mbr_div_freq_1b     ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                 ;
-+-------------------------------------+---------------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                       ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+---------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 180720257643335.169945598306500             ; --            ; --          ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                          ; --            ; --          ; eda_simulation ;
-; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/aluno/maximus/TP5/simulation/qsim/ ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                 ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                   ; <None>        ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                                    ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                       ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                      ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                ; --            ; --          ; --             ;
-+-------------------------------------+---------------------------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                               ;
++-------------------------------------+---------------------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                                                     ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 123598315310445.170023914904984                                           ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                        ; --            ; --          ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP5/simulation/qsim/ ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                               ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                                 ; <None>        ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                                                                  ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                     ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                                    ; --            ; --          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                              ; --            ; --          ; --             ;
++-------------------------------------+---------------------------------------------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -96,16 +96,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4657 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:08     ; 1.0                     ; 5034 MB             ; 00:00:08                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4621 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4619 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4576 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:20                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4698 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:09     ; 1.4                     ; 5427 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4644 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4668 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4596 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:18     ; --                      ; --                  ; 00:00:15                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -114,15 +110,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; s-67-102-18      ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; s-67-102-18      ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; s-67-102-18      ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; s-67-102-18      ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; s-67-102-18      ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; s-67-102-18      ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; s-67-102-18      ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; s-67-102-18      ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; s-67-102-18      ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -134,10 +126,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off mbr_div_freq_1b
 quartus_asm --read_settings_files=off --write_settings_files=off mbr_div_freq_1b -c mbr_div_freq_1b
 quartus_sta mbr_div_freq_1b -c mbr_div_freq_1b
 quartus_eda --read_settings_files=off --write_settings_files=off mbr_div_freq_1b -c mbr_div_freq_1b
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog mbr_div_freq_1b -c mbr_div_freq_1b --vector_source=C:/Users/aluno/maximus/TP5/Waveform.vwf --testbench_file=C:/Users/aluno/maximus/TP5/simulation/qsim/Waveform.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/aluno/maximus/TP5/simulation/qsim/ mbr_div_freq_1b -c mbr_div_freq_1b
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog mbr_div_freq_1b -c mbr_div_freq_1b --vector_source=C:/Users/aluno/maximus/TP5/Waveform.vwf --testbench_file=C:/Users/aluno/maximus/TP5/simulation/qsim/Waveform.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/aluno/maximus/TP5/simulation/qsim/ mbr_div_freq_1b -c mbr_div_freq_1b
 
 
 

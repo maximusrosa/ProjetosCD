@@ -1,7 +1,6 @@
 |mbr_div_freq_1b
 Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
-D <= inst.DB_MAX_OUTPUT_PORT_TYPE
 RST => inst2.IN0
-CK => inst.CLK
+CLK => inst.CLK
 
 

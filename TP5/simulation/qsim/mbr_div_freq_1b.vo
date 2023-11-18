@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
-// DATE "11/08/2023 12:13:30"
+// DATE "11/17/2023 13:39:34"
 
 // 
 // Device: Altera EP4CGX15BF14C6 Package FBGA169
@@ -30,19 +30,16 @@
 
 module mbr_div_freq_1b (
 	Q,
-	D,
 	RST,
-	CK);
+	CLK);
 output 	Q;
-output 	D;
 input 	RST;
-input 	CK;
+input 	CLK;
 
 // Design Ports Information
-// Q	=>  Location: PIN_M4,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// D	=>  Location: PIN_L4,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// CK	=>  Location: PIN_N4,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// RST	=>  Location: PIN_M6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Q	=>  Location: PIN_B10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CLK	=>  Location: PIN_B13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// RST	=>  Location: PIN_A13,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -57,14 +54,13 @@ tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
 wire \Q~output_o ;
-wire \D~output_o ;
-wire \CK~input_o ;
+wire \CLK~input_o ;
 wire \inst~0_combout ;
 wire \RST~input_o ;
 wire \inst~q ;
 
 
-// Location: IOOBUF_X8_Y0_N2
+// Location: IOOBUF_X24_Y31_N9
 cycloneiv_io_obuf \Q~output (
 	.i(\inst~q ),
 	.oe(vcc),
@@ -77,30 +73,17 @@ defparam \Q~output .bus_hold = "false";
 defparam \Q~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X8_Y0_N9
-cycloneiv_io_obuf \D~output (
-	.i(\inst~q ),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\D~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \D~output .bus_hold = "false";
-defparam \D~output .open_drain_output = "false";
-// synopsys translate_on
-
-// Location: IOIBUF_X10_Y0_N8
-cycloneiv_io_ibuf \CK~input (
-	.i(CK),
+// Location: IOIBUF_X26_Y31_N8
+cycloneiv_io_ibuf \CLK~input (
+	.i(CLK),
 	.ibar(gnd),
-	.o(\CK~input_o ));
+	.o(\CLK~input_o ));
 // synopsys translate_off
-defparam \CK~input .bus_hold = "false";
-defparam \CK~input .simulate_z_as = "z";
+defparam \CLK~input .bus_hold = "false";
+defparam \CLK~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LCCOMB_X10_Y1_N4
+// Location: LCCOMB_X26_Y30_N12
 cycloneiv_lcell_comb \inst~0 (
 // Equation(s):
 // \inst~0_combout  = !\inst~q 
@@ -117,7 +100,7 @@ defparam \inst~0 .lut_mask = 16'h0F0F;
 defparam \inst~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: IOIBUF_X12_Y0_N8
+// Location: IOIBUF_X26_Y31_N1
 cycloneiv_io_ibuf \RST~input (
 	.i(RST),
 	.ibar(gnd),
@@ -127,9 +110,9 @@ defparam \RST~input .bus_hold = "false";
 defparam \RST~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: FF_X10_Y1_N5
+// Location: FF_X26_Y30_N13
 dffeas inst(
-	.clk(\CK~input_o ),
+	.clk(\CLK~input_o ),
 	.d(\inst~0_combout ),
 	.asdata(vcc),
 	.clrn(!\RST~input_o ),
@@ -147,7 +130,5 @@ defparam inst.power_up = "low";
 // synopsys translate_on
 
 assign Q = \Q~output_o ;
-
-assign D = \D~output_o ;
 
 endmodule

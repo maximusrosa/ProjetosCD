@@ -23,66 +23,6 @@
 # Loading work.mbr_div_freq_1b_vlg_sample_tst
 # Loading work.mbr_div_freq_1b_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
-# ERROR! Vector Mismatch for output port D :: @time = 40000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port D :: @time = 60000.000 ps
-#      Expected value = 1
-#      Real value = 0
-# ERROR! Vector Mismatch for output port D :: @time = 120000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port D :: @time = 180000.000 ps
-#      Expected value = 1
-#      Real value = 0
-# ERROR! Vector Mismatch for output port D :: @time = 210000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port D :: @time = 260000.000 ps
-#      Expected value = 1
-#      Real value = 0
-# ERROR! Vector Mismatch for output port D :: @time = 320000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port D :: @time = 380000.000 ps
-#      Expected value = 1
-#      Real value = 0
-# ERROR! Vector Mismatch for output port D :: @time = 410000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port D :: @time = 460000.000 ps
-#      Expected value = 1
-#      Real value = 0
-# ERROR! Vector Mismatch for output port D :: @time = 520000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port D :: @time = 580000.000 ps
-#      Expected value = 1
-#      Real value = 0
-# ERROR! Vector Mismatch for output port D :: @time = 610000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port D :: @time = 660000.000 ps
-#      Expected value = 1
-#      Real value = 0
-# ERROR! Vector Mismatch for output port D :: @time = 720000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port D :: @time = 780000.000 ps
-#      Expected value = 1
-#      Real value = 0
-# ERROR! Vector Mismatch for output port D :: @time = 810000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port D :: @time = 860000.000 ps
-#      Expected value = 1
-#      Real value = 0
-# ERROR! Vector Mismatch for output port D :: @time = 920000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port D :: @time = 980000.000 ps
-#      Expected value = 1
-#      Real value = 0
-#          20 mismatched vectors : Simulation failed !
-# ** Note: $finish    : Waveform.vwf.vt(179)
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(177)
 #    Time: 1 us  Iteration: 0  Instance: /mbr_div_freq_1b_vlg_vec_tst/tb_out
