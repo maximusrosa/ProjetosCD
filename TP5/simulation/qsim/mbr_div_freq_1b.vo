@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
-// DATE "11/17/2023 13:39:34"
+// DATE "11/19/2023 22:30:14"
 
 // 
 // Device: Altera EP4CGX15BF14C6 Package FBGA169
@@ -30,11 +30,11 @@
 
 module mbr_div_freq_1b (
 	Q,
-	RST,
-	CLK);
+	CLK,
+	RST);
 output 	Q;
-input 	RST;
 input 	CLK;
+input 	RST;
 
 // Design Ports Information
 // Q	=>  Location: PIN_B10,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -55,14 +55,14 @@ tri1 devpor;
 tri1 devoe;
 wire \Q~output_o ;
 wire \CLK~input_o ;
-wire \inst~0_combout ;
+wire \inst1|inst~0_combout ;
 wire \RST~input_o ;
-wire \inst~q ;
+wire \inst1|inst~q ;
 
 
 // Location: IOOBUF_X24_Y31_N9
 cycloneiv_io_obuf \Q~output (
-	.i(\inst~q ),
+	.i(\inst1|inst~q ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -84,20 +84,20 @@ defparam \CLK~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: LCCOMB_X26_Y30_N12
-cycloneiv_lcell_comb \inst~0 (
+cycloneiv_lcell_comb \inst1|inst~0 (
 // Equation(s):
-// \inst~0_combout  = !\inst~q 
+// \inst1|inst~0_combout  = !\inst1|inst~q 
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\inst~q ),
+	.datac(\inst1|inst~q ),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\inst~0_combout ),
+	.combout(\inst1|inst~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \inst~0 .lut_mask = 16'h0F0F;
-defparam \inst~0 .sum_lutc_input = "datac";
+defparam \inst1|inst~0 .lut_mask = 16'h0F0F;
+defparam \inst1|inst~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: IOIBUF_X26_Y31_N1
@@ -111,9 +111,9 @@ defparam \RST~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: FF_X26_Y30_N13
-dffeas inst(
+dffeas \inst1|inst (
 	.clk(\CLK~input_o ),
-	.d(\inst~0_combout ),
+	.d(\inst1|inst~0_combout ),
 	.asdata(vcc),
 	.clrn(!\RST~input_o ),
 	.aload(gnd),
@@ -122,11 +122,11 @@ dffeas inst(
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\inst~q ),
+	.q(\inst1|inst~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam inst.is_wysiwyg = "true";
-defparam inst.power_up = "low";
+defparam \inst1|inst .is_wysiwyg = "true";
+defparam \inst1|inst .power_up = "low";
 // synopsys translate_on
 
 assign Q = \Q~output_o ;

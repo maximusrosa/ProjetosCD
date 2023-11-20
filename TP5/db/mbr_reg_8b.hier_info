@@ -1,0 +1,227 @@
+|mbr_reg_8b
+Q[0] <= mbr_reg_1b:inst.Q
+Q[1] <= mbr_reg_1b:inst5.Q
+Q[2] <= mbr_reg_1b:inst6.Q
+Q[3] <= mbr_reg_1b:inst7.Q
+Q[4] <= mbr_reg_1b:inst8.Q
+Q[5] <= mbr_reg_1b:inst9.Q
+Q[6] <= mbr_reg_1b:inst10.Q
+Q[7] <= mbr_reg_1b:inst11.Q
+D[0] => mbr_reg_1b:inst.D
+D[1] => mbr_reg_1b:inst5.D
+D[2] => mbr_reg_1b:inst6.D
+D[3] => mbr_reg_1b:inst7.D
+D[4] => mbr_reg_1b:inst8.D
+D[5] => mbr_reg_1b:inst9.D
+D[6] => mbr_reg_1b:inst10.D
+D[7] => mbr_reg_1b:inst11.D
+EN => mbr_reg_1b:inst.EN
+EN => mbr_reg_1b:inst5.EN
+EN => mbr_reg_1b:inst11.EN
+EN => mbr_reg_1b:inst10.EN
+EN => mbr_reg_1b:inst8.EN
+EN => mbr_reg_1b:inst9.EN
+EN => mbr_reg_1b:inst6.EN
+EN => mbr_reg_1b:inst7.EN
+CLK => mbr_reg_1b:inst.CLK
+CLK => mbr_reg_1b:inst5.CLK
+CLK => mbr_reg_1b:inst11.CLK
+CLK => mbr_reg_1b:inst10.CLK
+CLK => mbr_reg_1b:inst8.CLK
+CLK => mbr_reg_1b:inst9.CLK
+CLK => mbr_reg_1b:inst6.CLK
+CLK => mbr_reg_1b:inst7.CLK
+RST => mbr_reg_1b:inst.RST
+RST => mbr_reg_1b:inst5.RST
+RST => mbr_reg_1b:inst11.RST
+RST => mbr_reg_1b:inst10.RST
+RST => mbr_reg_1b:inst8.RST
+RST => mbr_reg_1b:inst9.RST
+RST => mbr_reg_1b:inst6.RST
+RST => mbr_reg_1b:inst7.RST
+
+
+|mbr_reg_8b|mbr_reg_1b:inst
+Q <= mbr_dff:inst.Q
+EN => mbr_mux2x1_1b:inst1.c
+D => mbr_mux2x1_1b:inst1.e1
+CLK => mbr_dff:inst.CLK
+RST => mbr_dff:inst.RST
+
+
+|mbr_reg_8b|mbr_reg_1b:inst|mbr_dff:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CLK => inst.CLK
+D => inst.DATAIN
+
+
+|mbr_reg_8b|mbr_reg_1b:inst|mbr_mux2x1_1b:inst1
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_reg_8b|mbr_reg_1b:inst5
+Q <= mbr_dff:inst.Q
+EN => mbr_mux2x1_1b:inst1.c
+D => mbr_mux2x1_1b:inst1.e1
+CLK => mbr_dff:inst.CLK
+RST => mbr_dff:inst.RST
+
+
+|mbr_reg_8b|mbr_reg_1b:inst5|mbr_dff:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CLK => inst.CLK
+D => inst.DATAIN
+
+
+|mbr_reg_8b|mbr_reg_1b:inst5|mbr_mux2x1_1b:inst1
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_reg_8b|mbr_reg_1b:inst11
+Q <= mbr_dff:inst.Q
+EN => mbr_mux2x1_1b:inst1.c
+D => mbr_mux2x1_1b:inst1.e1
+CLK => mbr_dff:inst.CLK
+RST => mbr_dff:inst.RST
+
+
+|mbr_reg_8b|mbr_reg_1b:inst11|mbr_dff:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CLK => inst.CLK
+D => inst.DATAIN
+
+
+|mbr_reg_8b|mbr_reg_1b:inst11|mbr_mux2x1_1b:inst1
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_reg_8b|mbr_reg_1b:inst10
+Q <= mbr_dff:inst.Q
+EN => mbr_mux2x1_1b:inst1.c
+D => mbr_mux2x1_1b:inst1.e1
+CLK => mbr_dff:inst.CLK
+RST => mbr_dff:inst.RST
+
+
+|mbr_reg_8b|mbr_reg_1b:inst10|mbr_dff:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CLK => inst.CLK
+D => inst.DATAIN
+
+
+|mbr_reg_8b|mbr_reg_1b:inst10|mbr_mux2x1_1b:inst1
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_reg_8b|mbr_reg_1b:inst8
+Q <= mbr_dff:inst.Q
+EN => mbr_mux2x1_1b:inst1.c
+D => mbr_mux2x1_1b:inst1.e1
+CLK => mbr_dff:inst.CLK
+RST => mbr_dff:inst.RST
+
+
+|mbr_reg_8b|mbr_reg_1b:inst8|mbr_dff:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CLK => inst.CLK
+D => inst.DATAIN
+
+
+|mbr_reg_8b|mbr_reg_1b:inst8|mbr_mux2x1_1b:inst1
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_reg_8b|mbr_reg_1b:inst9
+Q <= mbr_dff:inst.Q
+EN => mbr_mux2x1_1b:inst1.c
+D => mbr_mux2x1_1b:inst1.e1
+CLK => mbr_dff:inst.CLK
+RST => mbr_dff:inst.RST
+
+
+|mbr_reg_8b|mbr_reg_1b:inst9|mbr_dff:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CLK => inst.CLK
+D => inst.DATAIN
+
+
+|mbr_reg_8b|mbr_reg_1b:inst9|mbr_mux2x1_1b:inst1
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_reg_8b|mbr_reg_1b:inst6
+Q <= mbr_dff:inst.Q
+EN => mbr_mux2x1_1b:inst1.c
+D => mbr_mux2x1_1b:inst1.e1
+CLK => mbr_dff:inst.CLK
+RST => mbr_dff:inst.RST
+
+
+|mbr_reg_8b|mbr_reg_1b:inst6|mbr_dff:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CLK => inst.CLK
+D => inst.DATAIN
+
+
+|mbr_reg_8b|mbr_reg_1b:inst6|mbr_mux2x1_1b:inst1
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_reg_8b|mbr_reg_1b:inst7
+Q <= mbr_dff:inst.Q
+EN => mbr_mux2x1_1b:inst1.c
+D => mbr_mux2x1_1b:inst1.e1
+CLK => mbr_dff:inst.CLK
+RST => mbr_dff:inst.RST
+
+
+|mbr_reg_8b|mbr_reg_1b:inst7|mbr_dff:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CLK => inst.CLK
+D => inst.DATAIN
+
+
+|mbr_reg_8b|mbr_reg_1b:inst7|mbr_mux2x1_1b:inst1
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+

@@ -1,0 +1,162 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+
+// DATE "11/19/2023 22:41:37"
+
+// 
+// Device: Altera EP4CGX15BF14C6 Package FBGA169
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module mbr_reg_1b (
+	Q,
+	EN,
+	D,
+	CLK,
+	RST);
+output 	Q;
+input 	EN;
+input 	D;
+input 	CLK;
+input 	RST;
+
+// Design Ports Information
+// Q	=>  Location: PIN_L4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// D	=>  Location: PIN_M6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// EN	=>  Location: PIN_N6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CLK	=>  Location: PIN_N4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// RST	=>  Location: PIN_M4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \Q~output_o ;
+wire \CLK~input_o ;
+wire \EN~input_o ;
+wire \D~input_o ;
+wire \inst|inst~0_combout ;
+wire \RST~input_o ;
+wire \inst|inst~q ;
+
+
+// Location: IOOBUF_X8_Y0_N9
+cycloneiv_io_obuf \Q~output (
+	.i(\inst|inst~q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Q~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Q~output .bus_hold = "false";
+defparam \Q~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X10_Y0_N8
+cycloneiv_io_ibuf \CLK~input (
+	.i(CLK),
+	.ibar(gnd),
+	.o(\CLK~input_o ));
+// synopsys translate_off
+defparam \CLK~input .bus_hold = "false";
+defparam \CLK~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X12_Y0_N1
+cycloneiv_io_ibuf \EN~input (
+	.i(EN),
+	.ibar(gnd),
+	.o(\EN~input_o ));
+// synopsys translate_off
+defparam \EN~input .bus_hold = "false";
+defparam \EN~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X12_Y0_N8
+cycloneiv_io_ibuf \D~input (
+	.i(D),
+	.ibar(gnd),
+	.o(\D~input_o ));
+// synopsys translate_off
+defparam \D~input .bus_hold = "false";
+defparam \D~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X9_Y1_N24
+cycloneiv_lcell_comb \inst|inst~0 (
+// Equation(s):
+// \inst|inst~0_combout  = (\EN~input_o  & ((\D~input_o ))) # (!\EN~input_o  & (\inst|inst~q ))
+
+	.dataa(\EN~input_o ),
+	.datab(gnd),
+	.datac(\inst|inst~q ),
+	.datad(\D~input_o ),
+	.cin(gnd),
+	.combout(\inst|inst~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst~0 .lut_mask = 16'hFA50;
+defparam \inst|inst~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X8_Y0_N1
+cycloneiv_io_ibuf \RST~input (
+	.i(RST),
+	.ibar(gnd),
+	.o(\RST~input_o ));
+// synopsys translate_off
+defparam \RST~input .bus_hold = "false";
+defparam \RST~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: FF_X9_Y1_N25
+dffeas \inst|inst (
+	.clk(\CLK~input_o ),
+	.d(\inst|inst~0_combout ),
+	.asdata(vcc),
+	.clrn(!\RST~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|inst~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|inst .is_wysiwyg = "true";
+defparam \inst|inst .power_up = "low";
+// synopsys translate_on
+
+assign Q = \Q~output_o ;
+
+endmodule

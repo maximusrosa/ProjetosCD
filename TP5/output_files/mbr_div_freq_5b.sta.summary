@@ -2,7 +2,7 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'mbr_div_freq_1b:inst3|inst'
+Type  : Slow 1200mV 85C Model Setup 'mbr_div_freq_1b:inst2|mbr_dff:inst1|inst'
 Slack : -0.014
 TNS   : -0.014
 
@@ -10,19 +10,19 @@ Type  : Slow 1200mV 85C Model Setup 'CK'
 Slack : 0.018
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup 'mbr_div_freq_1b:inst2|inst'
+Type  : Slow 1200mV 85C Model Setup 'mbr_div_freq_1b:inst1|mbr_dff:inst1|inst'
 Slack : 0.086
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup 'mbr_div_freq_1b:inst|inst'
+Type  : Slow 1200mV 85C Model Setup 'mbr_div_freq_1b:inst|mbr_dff:inst1|inst'
 Slack : 0.158
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup 'mbr_div_freq_1b:inst4|inst'
+Type  : Slow 1200mV 85C Model Setup 'mbr_div_freq_1b:inst3|mbr_dff:inst1|inst'
 Slack : 0.318
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'mbr_div_freq_1b:inst2|inst'
+Type  : Slow 1200mV 85C Model Hold 'mbr_div_freq_1b:inst1|mbr_dff:inst1|inst'
 Slack : -0.077
 TNS   : -0.077
 
@@ -30,15 +30,15 @@ Type  : Slow 1200mV 85C Model Hold 'CK'
 Slack : 0.062
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'mbr_div_freq_1b:inst|inst'
+Type  : Slow 1200mV 85C Model Hold 'mbr_div_freq_1b:inst|mbr_dff:inst1|inst'
 Slack : 0.067
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'mbr_div_freq_1b:inst3|inst'
+Type  : Slow 1200mV 85C Model Hold 'mbr_div_freq_1b:inst2|mbr_dff:inst1|inst'
 Slack : 0.158
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'mbr_div_freq_1b:inst4|inst'
+Type  : Slow 1200mV 85C Model Hold 'mbr_div_freq_1b:inst3|mbr_dff:inst1|inst'
 Slack : 0.385
 TNS   : 0.000
 
@@ -46,23 +46,23 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CK'
 Slack : -3.000
 TNS   : -4.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'mbr_div_freq_1b:inst2|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'mbr_div_freq_1b:inst1|mbr_dff:inst1|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'mbr_div_freq_1b:inst3|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'mbr_div_freq_1b:inst2|mbr_dff:inst1|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'mbr_div_freq_1b:inst4|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'mbr_div_freq_1b:inst3|mbr_dff:inst1|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'mbr_div_freq_1b:inst|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'mbr_div_freq_1b:inst|mbr_dff:inst1|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Slow 1200mV 0C Model Setup 'mbr_div_freq_1b:inst3|inst'
+Type  : Slow 1200mV 0C Model Setup 'mbr_div_freq_1b:inst2|mbr_dff:inst1|inst'
 Slack : 0.046
 TNS   : 0.000
 
@@ -70,19 +70,19 @@ Type  : Slow 1200mV 0C Model Setup 'CK'
 Slack : 0.088
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'mbr_div_freq_1b:inst2|inst'
+Type  : Slow 1200mV 0C Model Setup 'mbr_div_freq_1b:inst1|mbr_dff:inst1|inst'
 Slack : 0.151
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'mbr_div_freq_1b:inst|inst'
+Type  : Slow 1200mV 0C Model Setup 'mbr_div_freq_1b:inst|mbr_dff:inst1|inst'
 Slack : 0.201
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'mbr_div_freq_1b:inst4|inst'
+Type  : Slow 1200mV 0C Model Setup 'mbr_div_freq_1b:inst3|mbr_dff:inst1|inst'
 Slack : 0.398
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'mbr_div_freq_1b:inst2|inst'
+Type  : Slow 1200mV 0C Model Hold 'mbr_div_freq_1b:inst1|mbr_dff:inst1|inst'
 Slack : -0.109
 TNS   : -0.109
 
@@ -90,15 +90,15 @@ Type  : Slow 1200mV 0C Model Hold 'CK'
 Slack : 0.017
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'mbr_div_freq_1b:inst|inst'
+Type  : Slow 1200mV 0C Model Hold 'mbr_div_freq_1b:inst|mbr_dff:inst1|inst'
 Slack : 0.059
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'mbr_div_freq_1b:inst3|inst'
+Type  : Slow 1200mV 0C Model Hold 'mbr_div_freq_1b:inst2|mbr_dff:inst1|inst'
 Slack : 0.137
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'mbr_div_freq_1b:inst4|inst'
+Type  : Slow 1200mV 0C Model Hold 'mbr_div_freq_1b:inst3|mbr_dff:inst1|inst'
 Slack : 0.341
 TNS   : 0.000
 
@@ -106,19 +106,19 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CK'
 Slack : -3.000
 TNS   : -4.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst2|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst1|mbr_dff:inst1|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst3|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst2|mbr_dff:inst1|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst4|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst3|mbr_dff:inst1|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst|mbr_dff:inst1|inst'
 Slack : -1.000
 TNS   : -1.000
 
@@ -126,27 +126,27 @@ Type  : Fast 1200mV 0C Model Setup 'CK'
 Slack : 0.206
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'mbr_div_freq_1b:inst3|inst'
+Type  : Fast 1200mV 0C Model Setup 'mbr_div_freq_1b:inst2|mbr_dff:inst1|inst'
 Slack : 0.228
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'mbr_div_freq_1b:inst2|inst'
+Type  : Fast 1200mV 0C Model Setup 'mbr_div_freq_1b:inst1|mbr_dff:inst1|inst'
 Slack : 0.277
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'mbr_div_freq_1b:inst|inst'
+Type  : Fast 1200mV 0C Model Setup 'mbr_div_freq_1b:inst|mbr_dff:inst1|inst'
 Slack : 0.330
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'mbr_div_freq_1b:inst4|inst'
+Type  : Fast 1200mV 0C Model Setup 'mbr_div_freq_1b:inst3|mbr_dff:inst1|inst'
 Slack : 0.626
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'mbr_div_freq_1b:inst2|inst'
+Type  : Fast 1200mV 0C Model Hold 'mbr_div_freq_1b:inst1|mbr_dff:inst1|inst'
 Slack : -0.047
 TNS   : -0.047
 
-Type  : Fast 1200mV 0C Model Hold 'mbr_div_freq_1b:inst|inst'
+Type  : Fast 1200mV 0C Model Hold 'mbr_div_freq_1b:inst|mbr_dff:inst1|inst'
 Slack : 0.009
 TNS   : 0.000
 
@@ -154,11 +154,11 @@ Type  : Fast 1200mV 0C Model Hold 'CK'
 Slack : 0.049
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'mbr_div_freq_1b:inst3|inst'
+Type  : Fast 1200mV 0C Model Hold 'mbr_div_freq_1b:inst2|mbr_dff:inst1|inst'
 Slack : 0.066
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'mbr_div_freq_1b:inst4|inst'
+Type  : Fast 1200mV 0C Model Hold 'mbr_div_freq_1b:inst3|mbr_dff:inst1|inst'
 Slack : 0.208
 TNS   : 0.000
 
@@ -166,19 +166,19 @@ Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CK'
 Slack : -3.000
 TNS   : -4.094
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst2|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst1|mbr_dff:inst1|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst3|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst2|mbr_dff:inst1|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst4|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst3|mbr_dff:inst1|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'mbr_div_freq_1b:inst|mbr_dff:inst1|inst'
 Slack : -1.000
 TNS   : -1.000
 

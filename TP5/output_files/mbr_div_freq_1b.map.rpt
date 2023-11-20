@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mbr_div_freq_1b
-Fri Nov 17 13:39:11 2023
+Sun Nov 19 22:29:25 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 17 13:39:11 2023      ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 19 22:29:25 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; mbr_div_freq_1b                            ;
 ; Top-level Entity Name              ; mbr_div_freq_1b                            ;
@@ -157,44 +157,47 @@ applicable agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
-; mbr_div_freq_1b.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP5/mbr_div_freq_1b.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------+---------+
+; mbr_div_freq_1b.bdf              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP5/mbr_div_freq_1b.bdf ;         ;
+; mbr_dff.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/maxbo/Documentos/estudos/circuitos_digitais/TP5/mbr_dff.bdf         ;         ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary ;
-+--------------------------+------------------+
-; Resource                 ; Usage            ;
-+--------------------------+------------------+
-; I/O pins                 ; 3                ;
-; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; inst             ;
-; Maximum fan-out          ; 2                ;
-; Total fan-out            ; 8                ;
-; Average fan-out          ; 1.00             ;
-+--------------------------+------------------+
++-----------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary   ;
++--------------------------+--------------------+
+; Resource                 ; Usage              ;
++--------------------------+--------------------+
+; I/O pins                 ; 3                  ;
+; DSP block 9-bit elements ; 0                  ;
+; Maximum fan-out node     ; mbr_dff:inst1|inst ;
+; Maximum fan-out          ; 2                  ;
+; Total fan-out            ; 8                  ;
+; Average fan-out          ; 1.00               ;
++--------------------------+--------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |mbr_div_freq_1b           ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 3    ; 0            ; |mbr_div_freq_1b    ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+--------------+
+; |mbr_div_freq_1b           ; 1 (0)             ; 1 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 3    ; 0            ; |mbr_div_freq_1b               ; work         ;
+;    |mbr_dff:inst1|         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |mbr_div_freq_1b|mbr_dff:inst1 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -218,7 +221,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -228,12 +231,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Nov 17 13:39:08 2023
+    Info: Processing started: Sun Nov 19 22:29:23 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mbr_div_freq_1b -c mbr_div_freq_1b
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file mbr_div_freq_1b.bdf
     Info (12023): Found entity 1: mbr_div_freq_1b
 Info (12127): Elaborating entity "mbr_div_freq_1b" for the top level hierarchy
+Warning (12125): Using design file mbr_dff.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: mbr_dff
+Info (12128): Elaborating entity "mbr_dff" for hierarchy "mbr_dff:inst1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -241,10 +247,10 @@ Info (21057): Implemented 4 device resources after synthesis - the final resourc
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 1 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4698 megabytes
-    Info: Processing ended: Fri Nov 17 13:39:11 2023
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Sun Nov 19 22:29:25 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

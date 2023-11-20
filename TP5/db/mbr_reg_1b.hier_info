@@ -1,0 +1,23 @@
+|mbr_reg_1b
+Q <= mbr_dff:inst.Q
+EN => mbr_mux2x1_1b:inst1.c
+D => mbr_mux2x1_1b:inst1.e1
+CLK => mbr_dff:inst.CLK
+RST => mbr_dff:inst.RST
+
+
+|mbr_reg_1b|mbr_dff:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CLK => inst.CLK
+D => inst.DATAIN
+
+
+|mbr_reg_1b|mbr_mux2x1_1b:inst1
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+

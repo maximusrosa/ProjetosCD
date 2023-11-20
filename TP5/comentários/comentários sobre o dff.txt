@@ -1,0 +1,3 @@
+// comentários sobre o dff
+
+o vcc é conectado para que o PRN (~SET) esteja sempre em 1, ou seja, o SET sempre vai estar setado em 0.
