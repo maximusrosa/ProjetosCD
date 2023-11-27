@@ -1,0 +1,27 @@
+Anotações contador genérico
+
+caso base: o bit b0 vai alternar o entre 0 e 1 à cada clock
+
+para os demais: o bit b_n vai estar ligado quando todos os outros bits anteriores estiverem ligados na última subida do clock
+
+Tabela Verdade XOR (x, q):
+x = 0 -> passa q
+x = 1 -> passa ~q
+
+Tabela Verdade XNOR (x, q):
+x = 1 -> passa q
+x = 0 -> passa ~q
+
+q xor ~q = 1
+
+se eu fixar o QANT em 1:
+ SOR = 1 e SAND = EAND
+
+se eu fixar o QANT em 0:
+ SOR = EOR e SAND = 0, 
+
+ EOR = 1 => SOR = 1
+
+eu quero ent_xor = 1 e ent_xnor = 0
+
+Q XOR 1 = ~Q
