@@ -1,0 +1,7 @@
+Tabela Verdade XOR (x, q):
+x = 0 -> passa q
+x = 1 -> passa ~q
+
+Tabela Verdade XNOR (x, q):
+x = 1 -> passa q
+x = 0 -> passa ~q
