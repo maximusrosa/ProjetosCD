@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\maxbo\Documentos\estudos\circuitos_digitais\TP6\simulation\qsim
+vmbr_cont_n_bits
+Z1 !s100 b;G3<g<Pj;7]E=hkTI<e]0
+Z2 Ig8_OXlY1QWLQENo6Tdlbc0
+Z3 V8:lm;jIYJ6Sem@PeH6]UY2
+Z4 dC:\Users\maxbo\Documentos\estudos\circuitos_digitais\TP6\simulation\qsim
+Z5 w1701131448
+Z6 8mbr_cont_n_bits.vo
+Z7 Fmbr_cont_n_bits.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|mbr_cont_n_bits.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1701131450.064000
+Z12 !s107 mbr_cont_n_bits.vo|
+!s101 -O0
+vmbr_cont_n_bits_vlg_check_tst
+!i10b 1
+!s100 9e@WeIR]8;zfFTcNehI1G2
+I80NY4SZ;<i<==n:QZ^CcU0
+Z13 V5HXPY`[7WGzj14goPkeK?1
+R4
+Z14 w1701131447
+Z15 8Waveform.vwf.vt
+Z16 FWaveform.vwf.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z17 !s108 1701131450.321000
+Z18 !s107 Waveform.vwf.vt|
+Z19 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R10
+vmbr_cont_n_bits_vlg_sample_tst
+!i10b 1
+Z20 !s100 B7XWX7@7ARVB0HZdS]b5H3
+Z21 ICLOH5@cVZ:PDcSkC`dP0Q3
+Z22 Vj]7NDU1g1=MK:>F=hgP9d3
+R4
+R14
+R15
+R16
+L0 29
+R8
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R10
+vmbr_cont_n_bits_vlg_vec_tst
+!i10b 1
+Z23 !s100 glWkTSYDUd`N___LYPemo0
+Z24 I9Q_Q84a^0M4OO3cmW[QUD0
+Z25 VkfF`ZEKVf8OYj79ZMmD^c0
+R4
+R14
+R15
+R16
+Z26 L0 211
+R8
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R10

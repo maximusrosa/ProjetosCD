@@ -1,0 +1,134 @@
+|mbr_cont_n_bits
+b[0] <= mbr_cont_generico:inst.Q
+b[1] <= mbr_cont_generico:inst1.Q
+b[2] <= <GND>
+b[3] <= <GND>
+D[0] => mbr_cont_generico:inst.D
+D[1] => mbr_cont_generico:inst1.D
+D[2] => ~NO_FANOUT~
+D[3] => ~NO_FANOUT~
+CLK => mbr_cont_generico:inst.CLK
+CLK => mbr_cont_generico:inst1.CLK
+RST => mbr_cont_generico:inst.RST
+RST => mbr_cont_generico:inst1.RST
+C[0] => mbr_cont_generico:inst.C[0]
+C[0] => mbr_cont_generico:inst1.C[0]
+C[1] => mbr_cont_generico:inst.QANT
+C[1] => mbr_cont_generico:inst.C[1]
+C[1] => mbr_cont_generico:inst1.C[1]
+
+
+|mbr_cont_n_bits|mbr_cont_generico:inst
+Q <= mbr_dff:inst.Q
+EAND => inst3.IN0
+QANT => inst3.IN1
+QANT => inst4.IN1
+EOR => inst4.IN0
+D => mbr_mux4x1_1b:inst1.e3
+C[0] => mbr_mux4x1_1b:inst1.c[0]
+C[1] => mbr_mux4x1_1b:inst1.c[1]
+CLK => mbr_dff:inst.CLK
+RST => mbr_dff:inst.RST
+SAND <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+SOR <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mbr_cont_n_bits|mbr_cont_generico:inst|mbr_dff:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CLK => inst.CLK
+D => inst.DATAIN
+
+
+|mbr_cont_n_bits|mbr_cont_generico:inst|mbr_mux4x1_1b:inst1
+X <= mbr_mux2x1_1b:inst5.X
+e0 => mbr_mux2x1_1b:inst3.e0
+c[0] => mbr_mux2x1_1b:inst3.c
+c[0] => mbr_mux2x1_1b:inst4.c
+c[1] => mbr_mux2x1_1b:inst5.c
+e1 => mbr_mux2x1_1b:inst3.e1
+e2 => mbr_mux2x1_1b:inst4.e0
+e3 => mbr_mux2x1_1b:inst4.e1
+
+
+|mbr_cont_n_bits|mbr_cont_generico:inst|mbr_mux4x1_1b:inst1|mbr_mux2x1_1b:inst5
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_cont_n_bits|mbr_cont_generico:inst|mbr_mux4x1_1b:inst1|mbr_mux2x1_1b:inst3
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_cont_n_bits|mbr_cont_generico:inst|mbr_mux4x1_1b:inst1|mbr_mux2x1_1b:inst4
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_cont_n_bits|mbr_cont_generico:inst1
+Q <= mbr_dff:inst.Q
+EAND => inst3.IN0
+QANT => inst3.IN1
+QANT => inst4.IN1
+EOR => inst4.IN0
+D => mbr_mux4x1_1b:inst1.e3
+C[0] => mbr_mux4x1_1b:inst1.c[0]
+C[1] => mbr_mux4x1_1b:inst1.c[1]
+CLK => mbr_dff:inst.CLK
+RST => mbr_dff:inst.RST
+SAND <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+SOR <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mbr_cont_n_bits|mbr_cont_generico:inst1|mbr_dff:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst2.IN0
+CLK => inst.CLK
+D => inst.DATAIN
+
+
+|mbr_cont_n_bits|mbr_cont_generico:inst1|mbr_mux4x1_1b:inst1
+X <= mbr_mux2x1_1b:inst5.X
+e0 => mbr_mux2x1_1b:inst3.e0
+c[0] => mbr_mux2x1_1b:inst3.c
+c[0] => mbr_mux2x1_1b:inst4.c
+c[1] => mbr_mux2x1_1b:inst5.c
+e1 => mbr_mux2x1_1b:inst3.e1
+e2 => mbr_mux2x1_1b:inst4.e0
+e3 => mbr_mux2x1_1b:inst4.e1
+
+
+|mbr_cont_n_bits|mbr_cont_generico:inst1|mbr_mux4x1_1b:inst1|mbr_mux2x1_1b:inst5
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_cont_n_bits|mbr_cont_generico:inst1|mbr_mux4x1_1b:inst1|mbr_mux2x1_1b:inst3
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_cont_n_bits|mbr_cont_generico:inst1|mbr_mux4x1_1b:inst1|mbr_mux2x1_1b:inst4
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
