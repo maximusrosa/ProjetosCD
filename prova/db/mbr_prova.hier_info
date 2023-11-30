@@ -1,19 +1,54 @@
 |mbr_prova
+cout <= bloco_unitario:inst13.cout
+x[0] => bloco_unitario:inst.x
+x[1] => bloco_unitario:inst11.x
+x[2] => bloco_unitario:inst12.x
+x[3] => bloco_unitario:inst13.x
+y[0] => bloco_unitario:inst.y
+y[1] => bloco_unitario:inst11.y
+y[2] => bloco_unitario:inst12.y
+y[3] => bloco_unitario:inst13.y
+s[0] <= bloco_unitario:inst.S
+s[1] <= bloco_unitario:inst11.S
+s[2] <= bloco_unitario:inst12.S
+s[3] <= bloco_unitario:inst13.S
+c[0] => bloco_unitario:inst.cin
+c[0] => bloco_unitario:inst.c[0]
+c[0] => bloco_unitario:inst11.c[0]
+c[0] => bloco_unitario:inst12.c[0]
+c[0] => bloco_unitario:inst13.c[0]
+c[1] => bloco_unitario:inst.c[1]
+c[1] => bloco_unitario:inst11.c[1]
+c[1] => bloco_unitario:inst12.c[1]
+c[1] => bloco_unitario:inst13.c[1]
+c[2] => bloco_unitario:inst.c[2]
+c[2] => bloco_unitario:inst11.c[2]
+c[2] => bloco_unitario:inst12.c[2]
+c[2] => bloco_unitario:inst13.c[2]
+
+
+|mbr_prova|bloco_unitario:inst13
 S <= mbr_mux8x1_1b:inst.S
-e0 => mbr_mux8x1_1b:inst.e0
-e1 => mbr_mux8x1_1b:inst.e1
-e2 => mbr_mux8x1_1b:inst.e2
-e3 => mbr_mux8x1_1b:inst.e3
-e4 => mbr_mux8x1_1b:inst.e4
-e5 => mbr_mux8x1_1b:inst.e5
-e6 => mbr_mux8x1_1b:inst.e6
-e7 => mbr_mux8x1_1b:inst.e7
+x => inst90.IN0
+x => inst1.IN1
+x => inst2.IN0
+x => inst4.IN0
+y => inst90.IN1
+y => inst1.IN0
+y => inst7.IN0
+y => mbr_mux8x1_1b:inst.e6
+cin => mbr_fa:inst3.x
+c[0] => inst7.IN1
 c[0] => mbr_mux8x1_1b:inst.c[0]
 c[1] => mbr_mux8x1_1b:inst.c[1]
+c[2] => inst4.IN1
+c[2] => inst5.IN0
 c[2] => mbr_mux8x1_1b:inst.c[2]
+z => mbr_mux8x1_1b:inst.e7
+cout <= mbr_fa:inst3.c_out
 
 
-|mbr_prova|mbr_mux8x1_1b:inst
+|mbr_prova|bloco_unitario:inst13|mbr_mux8x1_1b:inst
 S <= mbr_mux2x1_1b:inst2.X
 e0 => mbr_mux4x1_1b:inst.e0
 e1 => mbr_mux4x1_1b:inst.e1
@@ -30,7 +65,7 @@ e6 => mbr_mux4x1_1b:inst4.e2
 e7 => mbr_mux4x1_1b:inst4.e3
 
 
-|mbr_prova|mbr_mux8x1_1b:inst|mbr_mux2x1_1b:inst2
+|mbr_prova|bloco_unitario:inst13|mbr_mux8x1_1b:inst|mbr_mux2x1_1b:inst2
 X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 c => inst1.IN0
 c => inst2.IN0
@@ -38,7 +73,7 @@ e1 => inst1.IN1
 e0 => inst.IN0
 
 
-|mbr_prova|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst
+|mbr_prova|bloco_unitario:inst13|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst
 X <= mbr_mux2x1_1b:inst5.X
 e0 => mbr_mux2x1_1b:inst3.e0
 c0 => mbr_mux2x1_1b:inst3.c
@@ -49,7 +84,7 @@ e2 => mbr_mux2x1_1b:inst4.e0
 e3 => mbr_mux2x1_1b:inst4.e1
 
 
-|mbr_prova|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst|mbr_mux2x1_1b:inst5
+|mbr_prova|bloco_unitario:inst13|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst|mbr_mux2x1_1b:inst5
 X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 c => inst1.IN0
 c => inst2.IN0
@@ -57,7 +92,7 @@ e1 => inst1.IN1
 e0 => inst.IN0
 
 
-|mbr_prova|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst|mbr_mux2x1_1b:inst3
+|mbr_prova|bloco_unitario:inst13|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst|mbr_mux2x1_1b:inst3
 X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 c => inst1.IN0
 c => inst2.IN0
@@ -65,7 +100,7 @@ e1 => inst1.IN1
 e0 => inst.IN0
 
 
-|mbr_prova|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst|mbr_mux2x1_1b:inst4
+|mbr_prova|bloco_unitario:inst13|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst|mbr_mux2x1_1b:inst4
 X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 c => inst1.IN0
 c => inst2.IN0
@@ -73,7 +108,7 @@ e1 => inst1.IN1
 e0 => inst.IN0
 
 
-|mbr_prova|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4
+|mbr_prova|bloco_unitario:inst13|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4
 X <= mbr_mux2x1_1b:inst5.X
 e0 => mbr_mux2x1_1b:inst3.e0
 c0 => mbr_mux2x1_1b:inst3.c
@@ -84,7 +119,7 @@ e2 => mbr_mux2x1_1b:inst4.e0
 e3 => mbr_mux2x1_1b:inst4.e1
 
 
-|mbr_prova|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4|mbr_mux2x1_1b:inst5
+|mbr_prova|bloco_unitario:inst13|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4|mbr_mux2x1_1b:inst5
 X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 c => inst1.IN0
 c => inst2.IN0
@@ -92,7 +127,7 @@ e1 => inst1.IN1
 e0 => inst.IN0
 
 
-|mbr_prova|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4|mbr_mux2x1_1b:inst3
+|mbr_prova|bloco_unitario:inst13|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4|mbr_mux2x1_1b:inst3
 X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 c => inst1.IN0
 c => inst2.IN0
@@ -100,11 +135,471 @@ e1 => inst1.IN1
 e0 => inst.IN0
 
 
-|mbr_prova|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4|mbr_mux2x1_1b:inst4
+|mbr_prova|bloco_unitario:inst13|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4|mbr_mux2x1_1b:inst4
 X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 c => inst1.IN0
 c => inst2.IN0
 e1 => inst1.IN1
 e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst13|mbr_fa:inst3
+c_out <= maj3:inst1.s
+x => maj3:inst1.a
+x => XOR3:inst.IN1
+y => maj3:inst1.b
+y => XOR3:inst.IN2
+z => maj3:inst1.c
+z => XOR3:inst.IN3
+sum <= XOR3:inst.OUT
+
+
+|mbr_prova|bloco_unitario:inst13|mbr_fa:inst3|maj3:inst1
+s <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|mbr_prova|bloco_unitario:inst13|mbr_fa:inst3|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|mbr_prova|bloco_unitario:inst12
+S <= mbr_mux8x1_1b:inst.S
+x => inst90.IN0
+x => inst1.IN1
+x => inst2.IN0
+x => inst4.IN0
+y => inst90.IN1
+y => inst1.IN0
+y => inst7.IN0
+y => mbr_mux8x1_1b:inst.e6
+cin => mbr_fa:inst3.x
+c[0] => inst7.IN1
+c[0] => mbr_mux8x1_1b:inst.c[0]
+c[1] => mbr_mux8x1_1b:inst.c[1]
+c[2] => inst4.IN1
+c[2] => inst5.IN0
+c[2] => mbr_mux8x1_1b:inst.c[2]
+z => mbr_mux8x1_1b:inst.e7
+cout <= mbr_fa:inst3.c_out
+
+
+|mbr_prova|bloco_unitario:inst12|mbr_mux8x1_1b:inst
+S <= mbr_mux2x1_1b:inst2.X
+e0 => mbr_mux4x1_1b:inst.e0
+e1 => mbr_mux4x1_1b:inst.e1
+e2 => mbr_mux4x1_1b:inst.e2
+e3 => mbr_mux4x1_1b:inst.e3
+c[0] => mbr_mux4x1_1b:inst.c0
+c[0] => mbr_mux4x1_1b:inst4.c0
+c[1] => mbr_mux4x1_1b:inst.c1
+c[1] => mbr_mux4x1_1b:inst4.c1
+c[2] => mbr_mux2x1_1b:inst2.c
+e4 => mbr_mux4x1_1b:inst4.e0
+e5 => mbr_mux4x1_1b:inst4.e1
+e6 => mbr_mux4x1_1b:inst4.e2
+e7 => mbr_mux4x1_1b:inst4.e3
+
+
+|mbr_prova|bloco_unitario:inst12|mbr_mux8x1_1b:inst|mbr_mux2x1_1b:inst2
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst12|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst
+X <= mbr_mux2x1_1b:inst5.X
+e0 => mbr_mux2x1_1b:inst3.e0
+c0 => mbr_mux2x1_1b:inst3.c
+c0 => mbr_mux2x1_1b:inst4.c
+e1 => mbr_mux2x1_1b:inst3.e1
+c1 => mbr_mux2x1_1b:inst5.c
+e2 => mbr_mux2x1_1b:inst4.e0
+e3 => mbr_mux2x1_1b:inst4.e1
+
+
+|mbr_prova|bloco_unitario:inst12|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst|mbr_mux2x1_1b:inst5
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst12|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst|mbr_mux2x1_1b:inst3
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst12|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst|mbr_mux2x1_1b:inst4
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst12|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4
+X <= mbr_mux2x1_1b:inst5.X
+e0 => mbr_mux2x1_1b:inst3.e0
+c0 => mbr_mux2x1_1b:inst3.c
+c0 => mbr_mux2x1_1b:inst4.c
+e1 => mbr_mux2x1_1b:inst3.e1
+c1 => mbr_mux2x1_1b:inst5.c
+e2 => mbr_mux2x1_1b:inst4.e0
+e3 => mbr_mux2x1_1b:inst4.e1
+
+
+|mbr_prova|bloco_unitario:inst12|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4|mbr_mux2x1_1b:inst5
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst12|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4|mbr_mux2x1_1b:inst3
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst12|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4|mbr_mux2x1_1b:inst4
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst12|mbr_fa:inst3
+c_out <= maj3:inst1.s
+x => maj3:inst1.a
+x => XOR3:inst.IN1
+y => maj3:inst1.b
+y => XOR3:inst.IN2
+z => maj3:inst1.c
+z => XOR3:inst.IN3
+sum <= XOR3:inst.OUT
+
+
+|mbr_prova|bloco_unitario:inst12|mbr_fa:inst3|maj3:inst1
+s <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|mbr_prova|bloco_unitario:inst12|mbr_fa:inst3|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|mbr_prova|bloco_unitario:inst
+S <= mbr_mux8x1_1b:inst.S
+x => inst90.IN0
+x => inst1.IN1
+x => inst2.IN0
+x => inst4.IN0
+y => inst90.IN1
+y => inst1.IN0
+y => inst7.IN0
+y => mbr_mux8x1_1b:inst.e6
+cin => mbr_fa:inst3.x
+c[0] => inst7.IN1
+c[0] => mbr_mux8x1_1b:inst.c[0]
+c[1] => mbr_mux8x1_1b:inst.c[1]
+c[2] => inst4.IN1
+c[2] => inst5.IN0
+c[2] => mbr_mux8x1_1b:inst.c[2]
+z => mbr_mux8x1_1b:inst.e7
+cout <= mbr_fa:inst3.c_out
+
+
+|mbr_prova|bloco_unitario:inst|mbr_mux8x1_1b:inst
+S <= mbr_mux2x1_1b:inst2.X
+e0 => mbr_mux4x1_1b:inst.e0
+e1 => mbr_mux4x1_1b:inst.e1
+e2 => mbr_mux4x1_1b:inst.e2
+e3 => mbr_mux4x1_1b:inst.e3
+c[0] => mbr_mux4x1_1b:inst.c0
+c[0] => mbr_mux4x1_1b:inst4.c0
+c[1] => mbr_mux4x1_1b:inst.c1
+c[1] => mbr_mux4x1_1b:inst4.c1
+c[2] => mbr_mux2x1_1b:inst2.c
+e4 => mbr_mux4x1_1b:inst4.e0
+e5 => mbr_mux4x1_1b:inst4.e1
+e6 => mbr_mux4x1_1b:inst4.e2
+e7 => mbr_mux4x1_1b:inst4.e3
+
+
+|mbr_prova|bloco_unitario:inst|mbr_mux8x1_1b:inst|mbr_mux2x1_1b:inst2
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst
+X <= mbr_mux2x1_1b:inst5.X
+e0 => mbr_mux2x1_1b:inst3.e0
+c0 => mbr_mux2x1_1b:inst3.c
+c0 => mbr_mux2x1_1b:inst4.c
+e1 => mbr_mux2x1_1b:inst3.e1
+c1 => mbr_mux2x1_1b:inst5.c
+e2 => mbr_mux2x1_1b:inst4.e0
+e3 => mbr_mux2x1_1b:inst4.e1
+
+
+|mbr_prova|bloco_unitario:inst|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst|mbr_mux2x1_1b:inst5
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst|mbr_mux2x1_1b:inst3
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst|mbr_mux2x1_1b:inst4
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4
+X <= mbr_mux2x1_1b:inst5.X
+e0 => mbr_mux2x1_1b:inst3.e0
+c0 => mbr_mux2x1_1b:inst3.c
+c0 => mbr_mux2x1_1b:inst4.c
+e1 => mbr_mux2x1_1b:inst3.e1
+c1 => mbr_mux2x1_1b:inst5.c
+e2 => mbr_mux2x1_1b:inst4.e0
+e3 => mbr_mux2x1_1b:inst4.e1
+
+
+|mbr_prova|bloco_unitario:inst|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4|mbr_mux2x1_1b:inst5
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4|mbr_mux2x1_1b:inst3
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4|mbr_mux2x1_1b:inst4
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst|mbr_fa:inst3
+c_out <= maj3:inst1.s
+x => maj3:inst1.a
+x => XOR3:inst.IN1
+y => maj3:inst1.b
+y => XOR3:inst.IN2
+z => maj3:inst1.c
+z => XOR3:inst.IN3
+sum <= XOR3:inst.OUT
+
+
+|mbr_prova|bloco_unitario:inst|mbr_fa:inst3|maj3:inst1
+s <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|mbr_prova|bloco_unitario:inst|mbr_fa:inst3|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|mbr_prova|bloco_unitario:inst11
+S <= mbr_mux8x1_1b:inst.S
+x => inst90.IN0
+x => inst1.IN1
+x => inst2.IN0
+x => inst4.IN0
+y => inst90.IN1
+y => inst1.IN0
+y => inst7.IN0
+y => mbr_mux8x1_1b:inst.e6
+cin => mbr_fa:inst3.x
+c[0] => inst7.IN1
+c[0] => mbr_mux8x1_1b:inst.c[0]
+c[1] => mbr_mux8x1_1b:inst.c[1]
+c[2] => inst4.IN1
+c[2] => inst5.IN0
+c[2] => mbr_mux8x1_1b:inst.c[2]
+z => mbr_mux8x1_1b:inst.e7
+cout <= mbr_fa:inst3.c_out
+
+
+|mbr_prova|bloco_unitario:inst11|mbr_mux8x1_1b:inst
+S <= mbr_mux2x1_1b:inst2.X
+e0 => mbr_mux4x1_1b:inst.e0
+e1 => mbr_mux4x1_1b:inst.e1
+e2 => mbr_mux4x1_1b:inst.e2
+e3 => mbr_mux4x1_1b:inst.e3
+c[0] => mbr_mux4x1_1b:inst.c0
+c[0] => mbr_mux4x1_1b:inst4.c0
+c[1] => mbr_mux4x1_1b:inst.c1
+c[1] => mbr_mux4x1_1b:inst4.c1
+c[2] => mbr_mux2x1_1b:inst2.c
+e4 => mbr_mux4x1_1b:inst4.e0
+e5 => mbr_mux4x1_1b:inst4.e1
+e6 => mbr_mux4x1_1b:inst4.e2
+e7 => mbr_mux4x1_1b:inst4.e3
+
+
+|mbr_prova|bloco_unitario:inst11|mbr_mux8x1_1b:inst|mbr_mux2x1_1b:inst2
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst11|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst
+X <= mbr_mux2x1_1b:inst5.X
+e0 => mbr_mux2x1_1b:inst3.e0
+c0 => mbr_mux2x1_1b:inst3.c
+c0 => mbr_mux2x1_1b:inst4.c
+e1 => mbr_mux2x1_1b:inst3.e1
+c1 => mbr_mux2x1_1b:inst5.c
+e2 => mbr_mux2x1_1b:inst4.e0
+e3 => mbr_mux2x1_1b:inst4.e1
+
+
+|mbr_prova|bloco_unitario:inst11|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst|mbr_mux2x1_1b:inst5
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst11|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst|mbr_mux2x1_1b:inst3
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst11|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst|mbr_mux2x1_1b:inst4
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst11|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4
+X <= mbr_mux2x1_1b:inst5.X
+e0 => mbr_mux2x1_1b:inst3.e0
+c0 => mbr_mux2x1_1b:inst3.c
+c0 => mbr_mux2x1_1b:inst4.c
+e1 => mbr_mux2x1_1b:inst3.e1
+c1 => mbr_mux2x1_1b:inst5.c
+e2 => mbr_mux2x1_1b:inst4.e0
+e3 => mbr_mux2x1_1b:inst4.e1
+
+
+|mbr_prova|bloco_unitario:inst11|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4|mbr_mux2x1_1b:inst5
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst11|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4|mbr_mux2x1_1b:inst3
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst11|mbr_mux8x1_1b:inst|mbr_mux4x1_1b:inst4|mbr_mux2x1_1b:inst4
+X <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst2.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|mbr_prova|bloco_unitario:inst11|mbr_fa:inst3
+c_out <= maj3:inst1.s
+x => maj3:inst1.a
+x => XOR3:inst.IN1
+y => maj3:inst1.b
+y => XOR3:inst.IN2
+z => maj3:inst1.c
+z => XOR3:inst.IN3
+sum <= XOR3:inst.OUT
+
+
+|mbr_prova|bloco_unitario:inst11|mbr_fa:inst3|maj3:inst1
+s <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+a => inst1.IN0
+a => inst.IN0
+c => inst1.IN1
+c => inst2.IN1
+b => inst2.IN0
+b => inst.IN1
+
+
+|mbr_prova|bloco_unitario:inst11|mbr_fa:inst3|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
 
 

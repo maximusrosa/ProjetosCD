@@ -1,5 +1,5 @@
 Assembler report for mbr_prova
-Wed Nov 29 00:18:21 2023
+Wed Nov 29 12:22:10 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/output_files/mbr_prova.sof
+  5. Assembler Device Options: C:/Users/aluno/Downloads/prova/output_files/mbr_prova.sof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Nov 29 00:18:21 2023 ;
+; Assembler Status      ; Successful - Wed Nov 29 12:22:10 2023 ;
 ; Revision Name         ; mbr_prova                             ;
 ; Top-level Entity Name ; mbr_prova                             ;
 ; Family                ; Cyclone IV GX                         ;
@@ -77,24 +77,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+---------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                             ;
-+---------------------------------------------------------------------------------------+
-; File Name                                                                             ;
-+---------------------------------------------------------------------------------------+
-; C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/output_files/mbr_prova.sof ;
-+---------------------------------------------------------------------------------------+
++-----------------------------------------------------------+
+; Assembler Generated Files                                 ;
++-----------------------------------------------------------+
+; File Name                                                 ;
++-----------------------------------------------------------+
+; C:/Users/aluno/Downloads/prova/output_files/mbr_prova.sof ;
++-----------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/output_files/mbr_prova.sof ;
-+----------------+------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                        ;
-+----------------+------------------------------------------------------------------------------------------------+
-; Device         ; EP4CGX15BF14C6                                                                                 ;
-; JTAG usercode  ; 0x000BC886                                                                                     ;
-; Checksum       ; 0x000BC886                                                                                     ;
-+----------------+------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/aluno/Downloads/prova/output_files/mbr_prova.sof ;
++----------------+--------------------------------------------------------------------+
+; Option         ; Setting                                                            ;
++----------------+--------------------------------------------------------------------+
+; Device         ; EP4CGX15BF14C6                                                     ;
+; JTAG usercode  ; 0x000C01D3                                                         ;
+; Checksum       ; 0x000C01D3                                                         ;
++----------------+--------------------------------------------------------------------+
 
 
 +--------------------+
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Nov 29 00:18:19 2023
+    Info: Processing started: Wed Nov 29 12:22:08 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off mbr_prova -c mbr_prova
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4658 megabytes
-    Info: Processing ended: Wed Nov 29 00:18:21 2023
+    Info: Peak virtual memory: 4625 megabytes
+    Info: Processing ended: Wed Nov 29 12:22:10 2023
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 
