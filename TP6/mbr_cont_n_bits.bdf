@@ -100,7 +100,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 328 112 456 272)
+	(rect 336 112 464 272)
 	(text "mbr_cont_generico" (rect 5 0 114 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
@@ -444,39 +444,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(text "CLK" (rect 296 144 317 156)(font "Arial" ))
-	(pt 328 160)
-	(pt 288 160)
-)
-(connector
-	(text "RST" (rect 296 160 317 172)(font "Arial" ))
-	(pt 328 176)
-	(pt 288 176)
-)
-(connector
-	(pt 208 224)
-	(pt 328 224)
-)
-(connector
-	(pt 328 192)
-	(pt 208 192)
-)
-(connector
-	(pt 208 192)
-	(pt 208 184)
-)
-(connector
-	(text "C[1..0]" (rect 299 224 333 236)(font "Arial" ))
-	(pt 272 240)
-	(pt 328 240)
-	(bus)
-)
-(connector
-	(text "D0" (rect 296 128 310 140)(font "Arial" ))
-	(pt 328 144)
-	(pt 288 144)
-)
-(connector
 	(pt 632 176)
 	(pt 632 184)
 )
@@ -489,14 +456,6 @@ applicable agreement for further details.
 	(text "RST" (rect 600 112 621 124)(font "Arial" ))
 	(pt 592 128)
 	(pt 632 128)
-)
-(connector
-	(pt 456 144)
-	(pt 632 144)
-)
-(connector
-	(pt 456 176)
-	(pt 632 176)
 )
 (connector
 	(text "C[1..0]" (rect 603 176 637 188)(font "Arial" ))
@@ -517,11 +476,6 @@ applicable agreement for further details.
 	(text "b0" (rect 544 224 555 236)(font "Arial" ))
 	(pt 528 240)
 	(pt 568 240)
-)
-(connector
-	(text "C0" (rect 232 192 246 204)(font "Arial" ))
-	(pt 328 208)
-	(pt 208 208)
 )
 (connector
 	(text "b1" (rect 800 208 811 220)(font "Arial" ))
@@ -568,14 +522,6 @@ applicable agreement for further details.
 	(text "b2" (rect 1097 208 1108 220)(font "Arial" ))
 	(pt 1128 224)
 	(pt 1072 224)
-)
-(connector
-	(pt 456 160)
-	(pt 528 160)
-)
-(connector
-	(pt 528 160)
-	(pt 632 160)
 )
 (connector
 	(pt 760 112)
@@ -628,16 +574,70 @@ applicable agreement for further details.
 	(pt 1408 16)
 )
 (connector
-	(text "<<__$DEF_ALIAS1576>>" (rect 1136 -32 1259 -20)(font "Arial" )(invisible))
-	(pt 1160 0)
-	(pt 1200 0)
-)
-(connector
 	(text "D2" (rect 880 32 894 44)(font "Arial" ))
 	(pt 872 48)
 	(pt 912 48)
 )
+(connector
+	(pt 632 176)
+	(pt 464 176)
+)
+(connector
+	(pt 208 184)
+	(pt 208 192)
+)
+(connector
+	(pt 632 144)
+	(pt 464 144)
+)
+(connector
+	(pt 464 160)
+	(pt 528 160)
+)
+(connector
+	(pt 528 160)
+	(pt 632 160)
+)
+(connector
+	(text "D0" (rect 304 128 318 140)(font "Arial" ))
+	(pt 296 144)
+	(pt 336 144)
+)
+(connector
+	(text "CLK" (rect 304 144 325 156)(font "Arial" ))
+	(pt 296 160)
+	(pt 336 160)
+)
+(connector
+	(text "RST" (rect 304 160 325 172)(font "Arial" ))
+	(pt 296 176)
+	(pt 336 176)
+)
+(connector
+	(pt 208 192)
+	(pt 336 192)
+)
+(connector
+	(text "C0" (rect 240 192 254 204)(font "Arial" ))
+	(pt 216 208)
+	(pt 336 208)
+)
+(connector
+	(pt 208 224)
+	(pt 336 224)
+)
+(connector
+	(text "C[1..0]" (rect 307 224 341 236)(font "Arial" ))
+	(pt 280 240)
+	(pt 336 240)
+	(bus)
+)
+(connector
+	(text "D3" (rect 1168 -16 1182 -4)(font "Arial" ))
+	(pt 1200 0)
+	(pt 1160 0)
+)
 (junction (pt 528 160))
 (junction (pt 792 112))
 (junction (pt 1072 64))
-(text "D3" (rect 1168 -16 1182 -4)(font "Arial" ))
+(junction (pt 632 176))

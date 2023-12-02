@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Mon Nov 27 21:27:17 2023
+Analysis & Synthesis Status : Successful - Sat Dec 02 15:12:15 2023
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : mbr_cont_n_bits
 Top-level Entity Name : mbr_cont_n_bits
 Family : Cyclone IV GX
-Total logic elements : 3
-    Total combinational functions : 1
-    Dedicated logic registers : 2
-Total registers : 2
+Total logic elements : 14
+    Total combinational functions : 14
+    Dedicated logic registers : 4
+Total registers : 4
 Total pins : 12
 Total virtual pins : 0
 Total memory bits : 0
