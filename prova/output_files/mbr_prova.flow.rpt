@@ -1,5 +1,5 @@
 Flow report for mbr_prova
-Wed Nov 29 22:31:33 2023
+Sun Dec 03 18:12:10 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 29 22:31:33 2023      ;
+; Flow Status                        ; Successful - Sun Dec 03 18:12:10 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; mbr_prova                                  ;
 ; Top-level Entity Name              ; mbr_prova                                  ;
@@ -111,7 +111,17 @@ applicable agreement for further details.
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4607 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4607 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4607 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:28     ; --                      ; --                  ; 00:00:25                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4608 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4607 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4607 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4607 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4607 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4607 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4607 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4607 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4607 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4607 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:41     ; --                      ; --                  ; 00:00:28                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -127,6 +137,16 @@ applicable agreement for further details.
 ; EDA Netlist Writer        ; s-67-101-14      ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; s-67-101-14      ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; s-67-101-14      ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; LAPTOP-DVEMEV3Q  ; Windows 7 ; 6.2        ; x86_64         ;
@@ -153,6 +173,16 @@ quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_
 quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog mbr_prova -c mbr_prova --vector_source=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/Waveform2.vwf --testbench_file=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/Waveform2.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/ mbr_prova -c mbr_prova
 quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog mbr_prova -c mbr_prova --vector_source=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/Waveform2.vwf --testbench_file=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/Waveform2.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/ mbr_prova -c mbr_prova
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog mbr_prova -c mbr_prova --vector_source=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/Waveform3.vwf --testbench_file=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/Waveform3.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/ mbr_prova -c mbr_prova
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog mbr_prova -c mbr_prova --vector_source=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/Waveform3.vwf --testbench_file=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/Waveform3.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/ mbr_prova -c mbr_prova
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog mbr_prova -c mbr_prova --vector_source=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/Waveform3.vwf --testbench_file=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/Waveform3.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/ mbr_prova -c mbr_prova
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog mbr_prova -c mbr_prova --vector_source=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/Waveform3.vwf --testbench_file=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/Waveform3.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/ mbr_prova -c mbr_prova
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog mbr_prova -c mbr_prova --vector_source=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/Waveform3.vwf --testbench_file=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/Waveform3.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/ mbr_prova -c mbr_prova
 quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog mbr_prova -c mbr_prova --vector_source=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/Waveform3.vwf --testbench_file=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/Waveform3.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/maxbo/Documentos/estudos/circuitos_digitais/prova/simulation/qsim/ mbr_prova -c mbr_prova
