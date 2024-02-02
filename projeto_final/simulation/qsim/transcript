@@ -22,5 +22,5 @@
 # Loading work.projeto_final_vlg_sample_tst
 # Loading work.projeto_final_vlg_check_tst
 # Simulation passed !
-# ** Note: $finish    : Waveform1.vwf.vt(234)
+# ** Note: $finish    : Waveform.vwf.vt(252)
 #    Time: 1 us  Iteration: 0  Instance: /projeto_final_vlg_vec_tst/tb_out
