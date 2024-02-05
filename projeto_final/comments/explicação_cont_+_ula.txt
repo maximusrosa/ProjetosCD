@@ -1,0 +1,6 @@
+Com w[1..0] = 11, ou seja, com o contador deixando passar o dado D, o que acontece 
+é que o último número registrado antes da subida do clock (q[3..0]) vai ser constantemente 
+submetido às operações solicitadas à ULA, podendo ou não envolver d[3..0], que está sujeito
+a ser alterado de maneira arbitrária, até a que o clock suba novamente e q[3..0] seja atualizado.
+
+Em outras palavras, o 'q' varia de acordo com o clock enquanto que o 'd' é assíncrono.

@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 128 72 296 88)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "e0" (rect 5 0 17 12)(font "Arial" ))
+	(text "e0" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 128 104 296 120)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "e1" (rect 5 0 17 12)(font "Arial" ))
+	(text "e1" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 128 136 296 152)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "e2" (rect 5 0 17 12)(font "Arial" ))
+	(text "e2" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 128 168 296 184)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "e3" (rect 5 0 17 12)(font "Arial" ))
+	(text "e3" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -87,7 +87,7 @@ applicable agreement for further details.
 	(input)
 	(rect 128 200 296 216)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "e4" (rect 5 0 17 12)(font "Arial" ))
+	(text "e4" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -103,7 +103,7 @@ applicable agreement for further details.
 	(input)
 	(rect 128 232 296 248)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "e5" (rect 5 0 17 12)(font "Arial" ))
+	(text "e5" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -119,7 +119,7 @@ applicable agreement for further details.
 	(input)
 	(rect 128 264 296 280)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "e6" (rect 5 0 17 12)(font "Arial" ))
+	(text "e6" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -135,7 +135,7 @@ applicable agreement for further details.
 	(input)
 	(rect 128 296 296 312)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "e7" (rect 5 0 17 12)(font "Arial" ))
+	(text "e7" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -151,7 +151,7 @@ applicable agreement for further details.
 	(input)
 	(rect 128 328 296 344)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "c[2..0]" (rect 5 0 37 12)(font "Arial" ))
+	(text "c[2..0]" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -237,42 +237,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 792 176 888 272)
-	(text "mbr_mux2x1_1b" (rect 5 0 99 14)(font "Arial" (font_size 8)))
-	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "e0" (rect 0 0 14 14)(font "Arial" (font_size 8)))
-		(text "e0" (rect 21 27 35 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "c" (rect 0 0 7 14)(font "Arial" (font_size 8)))
-		(text "c" (rect 21 43 28 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "e1" (rect 0 0 14 14)(font "Arial" (font_size 8)))
-		(text "e1" (rect 21 59 35 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "X" (rect 0 0 8 14)(font "Arial" (font_size 8)))
-		(text "X" (rect 67 27 75 41)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
 	(rect 480 264 576 424)
 	(text "mbr_mux4x1_1b" (rect 5 0 99 14)(font "Arial" (font_size 8)))
 	(text "inst4" (rect 8 144 31 156)(font "Arial" ))
@@ -329,21 +293,41 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 80 144))
 	)
 )
-(connector
-	(pt 576 80)
-	(pt 792 80)
-)
-(connector
-	(pt 792 80)
-	(pt 792 208)
-)
-(connector
-	(pt 792 296)
-	(pt 576 296)
-)
-(connector
-	(pt 792 240)
-	(pt 792 296)
+(symbol
+	(rect 792 176 888 272)
+	(text "mbr_mux2x1_1b" (rect 5 0 99 14)(font "Arial" (font_size 8)))
+	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "e0" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "e0" (rect 21 27 35 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "e1" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "e1" (rect 21 43 35 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "c" (rect 0 0 7 14)(font "Arial" (font_size 8)))
+		(text "c" (rect 21 59 28 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "X" (rect 0 0 8 14)(font "Arial" (font_size 8)))
+		(text "X" (rect 67 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
 )
 (connector
 	(text "e0" (rect 459 64 470 76)(font "Arial" ))
@@ -386,11 +370,6 @@ applicable agreement for further details.
 	(pt 440 344)
 )
 (connector
-	(text "c2" (rect 752 208 763 220)(font "Arial" ))
-	(pt 792 224)
-	(pt 744 224)
-)
-(connector
 	(text "c0" (rect 457 128 468 140)(font "Arial" ))
 	(pt 480 144)
 	(pt 440 144)
@@ -413,4 +392,41 @@ applicable agreement for further details.
 (connector
 	(pt 888 208)
 	(pt 928 208)
+)
+(connector
+	(pt 576 296)
+	(pt 744 296)
+)
+(connector
+	(pt 744 296)
+	(pt 744 224)
+)
+(connector
+	(pt 744 224)
+	(pt 792 224)
+)
+(connector
+	(pt 576 80)
+	(pt 744 80)
+)
+(connector
+	(pt 792 208)
+	(pt 744 208)
+)
+(connector
+	(pt 744 208)
+	(pt 744 80)
+)
+(connector
+	(text "c2" (rect 752 304 763 316)(font "Arial" ))
+	(pt 776 320)
+	(pt 744 320)
+)
+(connector
+	(pt 792 240)
+	(pt 776 240)
+)
+(connector
+	(pt 776 240)
+	(pt 776 320)
 )

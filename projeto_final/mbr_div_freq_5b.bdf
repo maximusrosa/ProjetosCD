@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 48 272 216 288)
+	(rect 40 224 208 240)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "RST" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 40 152 208 168)
+	(rect 40 168 208 184)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
@@ -213,14 +213,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 240 176)
-	(pt 240 160)
-)
-(connector
-	(pt 248 176)
-	(pt 240 176)
-)
-(connector
 	(text "RST" (rect 544 176 565 188)(font "Arial" ))
 	(pt 536 192)
 	(pt 568 192)
@@ -239,10 +231,6 @@ applicable agreement for further details.
 	(text "Q1" (rect 521 160 535 172)(font "Arial" ))
 	(pt 504 176)
 	(pt 568 176)
-)
-(connector
-	(pt 208 160)
-	(pt 240 160)
 )
 (connector
 	(text "RST" (rect 216 176 237 188)(font "Arial" ))
@@ -273,4 +261,8 @@ applicable agreement for further details.
 	(text "Q4" (rect 967 160 981 172)(font "Arial" ))
 	(pt 952 176)
 	(pt 1000 176)
+)
+(connector
+	(pt 208 176)
+	(pt 248 176)
 )

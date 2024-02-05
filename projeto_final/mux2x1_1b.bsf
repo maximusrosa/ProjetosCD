@@ -33,15 +33,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "c" (rect 0 0 7 14)(font "Arial" (font_size 8)))
-		(text "c" (rect 21 43 28 57)(font "Arial" (font_size 8)))
+		(text "e1" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "e1" (rect 21 43 35 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "e1" (rect 0 0 14 14)(font "Arial" (font_size 8)))
-		(text "e1" (rect 21 59 35 73)(font "Arial" (font_size 8)))
+		(text "c" (rect 0 0 7 14)(font "Arial" (font_size 8)))
+		(text "c" (rect 21 59 28 73)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port

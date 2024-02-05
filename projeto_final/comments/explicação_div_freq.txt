@@ -1,0 +1,14 @@
+como é um Flip Flop D, o dado D passa quando o o clock CK "sobe"
+
+na primeira iteração:
+
+D = desconhecido
+RST = 1
+o que implica em
+Q = 0
+
+aí na segunda iteração:
+
+D = not (Q) = 1
+RST = 0
+Q = 1
